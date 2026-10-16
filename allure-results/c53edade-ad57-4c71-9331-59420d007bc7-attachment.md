@@ -1,0 +1,2147 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: dynamicXpath.spec.js >> Validating Login Functionality
+- Location: tests\dynamicXpath.spec.js:3:5
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+```
+Error: locator.fill: Test timeout of 30000ms exceeded.
+Call log:
+  - waiting for locator('//input[@name="username"]')
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - navigation "Shortcuts menu" [ref=e3]:
+    - heading "Skip to" [level=2] [ref=e4]
+    - list "Skip to" [ref=e5]:
+      - listitem [ref=e6]:
+        - link "main content" [ref=e7] [cursor=pointer]:
+          - /url: "#skippedLink"
+          - text: Main content
+    - separator [aria-hidden] [ref=e8]
+    - heading "Keyboard shortcuts" [level=2] [ref=e9]
+    - list "Keyboard shortcuts" [ref=e10]:
+      - listitem [ref=e11]:
+        - link "Search, alt, forward slash" [ref=e12] [cursor=pointer]:
+          - /url: javascript:void(0)
+          - generic [aria-hidden] [ref=e13]:
+            - generic [ref=e14]: Search
+            - generic [ref=e15]:
+              - generic [ref=e16]: alt
+              - generic [ref=e17]: +
+              - generic [ref=e18]: /
+      - listitem [ref=e19]:
+        - link "Cart, shift, alt, c" [ref=e20] [cursor=pointer]:
+          - /url: javascript:void(0)
+          - generic [aria-hidden] [ref=e21]:
+            - generic [ref=e22]: Cart
+            - generic [ref=e23]:
+              - generic [ref=e24]: shift
+              - generic [ref=e25]: +
+              - generic [ref=e26]: alt
+              - generic [ref=e27]: +
+              - generic [ref=e28]: C
+      - listitem [ref=e29]:
+        - link "Home, shift, alt, h" [ref=e30] [cursor=pointer]:
+          - /url: javascript:void(0)
+          - generic [aria-hidden] [ref=e31]:
+            - generic [ref=e32]: Home
+            - generic [ref=e33]:
+              - generic [ref=e34]: shift
+              - generic [ref=e35]: +
+              - generic [ref=e36]: alt
+              - generic [ref=e37]: +
+              - generic [ref=e38]: H
+      - listitem [ref=e39]:
+        - link "Your orders, shift, alt, o" [ref=e40] [cursor=pointer]:
+          - /url: javascript:void(0)
+          - generic [aria-hidden] [ref=e41]:
+            - generic [ref=e42]: Orders
+            - generic [ref=e43]:
+              - generic [ref=e44]: shift
+              - generic [ref=e45]: +
+              - generic [ref=e46]: alt
+              - generic [ref=e47]: +
+              - generic [ref=e48]: O
+      - listitem [ref=e49]:
+        - button "Show/hide shortcuts, shift, alt, z" [ref=e50] [cursor=pointer]:
+          - generic [aria-hidden] [ref=e51]:
+            - generic [ref=e52]: Show/Hide shortcuts
+            - generic [ref=e53]:
+              - generic [ref=e54]: shift
+              - generic [ref=e55]: +
+              - generic [ref=e56]: alt
+              - generic [ref=e57]: +
+              - generic [ref=e58]: Z
+    - generic [ref=e59]: To move between items, use your keyboard's up or down arrows.
+  - banner [ref=e65]:
+    - navigation "Primary" [ref=e66]:
+      - generic [ref=e67]:
+        - generic [ref=e68]:
+          - link "Amazon.in" [ref=e70] [cursor=pointer]:
+            - /url: /ref=nav_logo
+            - generic: .in
+          - button "Delivering to Chennai 600009 Update location" [ref=e73] [cursor=pointer]:
+            - generic [ref=e75]:
+              - generic [ref=e76]: Delivering to Chennai 600009
+              - generic [ref=e77]: Update location
+        - search [ref=e80]:
+          - generic [ref=e83]:
+            - generic [ref=e84]: Mobiles & Accessories
+            - combobox "Select the department you want to search in" [ref=e87] [cursor=pointer]:
+              - option "Mobiles & Accessories" [selected]
+              - option "All Categories"
+              - option "Alexa Skills"
+              - option "Amazon Devices"
+              - option "Amazon Fashion"
+              - option "Amazon Fresh"
+              - option "Amazon Fresh Meat"
+              - option "Amazon Pharmacy"
+              - option "Appliances"
+              - option "Apps & Games"
+              - option "Audible Audiobooks"
+              - option "Baby"
+              - option "Beauty"
+              - option "Books"
+              - option "Car & Motorbike"
+              - option "Clothing & Accessories"
+              - option "Collectibles"
+              - option "Computers & Accessories"
+              - option "Deals"
+              - option "Electronics"
+              - option "Furniture"
+              - option "Garden & Outdoors"
+              - option "Gift Cards"
+              - option "Grocery & Gourmet Foods"
+              - option "Health & Personal Care"
+              - option "Home & Kitchen"
+              - option "Industrial & Scientific"
+              - option "Jewellery"
+              - option "Kindle Store"
+              - option "Luggage & Bags"
+              - option "Luxury Beauty"
+              - option "Movies & TV Shows"
+              - option "MP3 Music"
+              - option "Music"
+              - option "Musical Instruments"
+              - option "Office Products"
+              - option "Pet Supplies"
+              - option "Prime Video"
+              - option "Shoes & Handbags"
+              - option "Software"
+              - option "Sports, Fitness & Outdoors"
+              - option "Subscribe & Save"
+              - option "Tools & Home Improvement"
+              - option "Toys & Games"
+              - option "Under ₹500"
+              - option "Video Games"
+              - option "Watches"
+          - searchbox "Search Amazon.in" [ref=e90]
+          - generic "Go" [ref=e93] [cursor=pointer]:
+            - button "Go" [ref=e94]
+        - generic [ref=e96]:
+          - generic [ref=e97]:
+            - link "Choose a language for shopping in Amazon India. The current selection is English (EN)." [ref=e98] [cursor=pointer]:
+              - /url: /customer-preferences/edit?ie=UTF8&preferencesReturnUrl=%2F&ref_=topnav_lang
+              - generic [ref=e101]:
+                - img "India" [ref=e102]
+                - generic [ref=e103]: EN
+            - button "Expand to Change Language or Country" [ref=e104] [cursor=pointer]
+          - generic [ref=e105]:
+            - link "Hello, sign in Account & Lists" [ref=e106] [cursor=pointer]:
+              - /url: https://www.amazon.in/ap/signin?openid.return_to=https%3A%2F%2Fwww.amazon.in%2Fmobile-phones%2Fb%2F%3Fie%3DUTF8%26node%3D1389401031%26ref_%3Dnav_ya_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=inflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0
+              - generic [ref=e107]: Hello, sign in
+              - generic [ref=e109]: Account & Lists
+            - button "Expand Account and Lists" [ref=e110] [cursor=pointer]
+          - link "Returns & Orders" [ref=e111] [cursor=pointer]:
+            - /url: /gp/css/order-history?ref_=nav_orders_first
+            - generic [ref=e112]: Returns
+            - generic [ref=e113]: "& Orders"
+          - link "0 items in cart" [ref=e114] [cursor=pointer]:
+            - /url: /gp/cart/view.html?ref_=nav_cart
+            - generic [aria-hidden] [ref=e116]: "0"
+            - generic [aria-hidden] [ref=e119]: Cart
+      - generic [ref=e120]:
+        - button "Open All Categories Menu" [ref=e122] [cursor=pointer]:
+          - generic [ref=e124]: All
+        - list [ref=e128]:
+          - listitem [ref=e129]:
+            - generic [ref=e130]:
+              - link "Fresh" [ref=e131] [cursor=pointer]:
+                - /url: /fresh?ref_=nav_cs_grocery
+              - button "Fresh Details" [ref=e132] [cursor=pointer]
+          - listitem [ref=e133]:
+            - link "Prime Video" [ref=e135] [cursor=pointer]:
+              - /url: https://www.primevideo.com/offers/nonprimehomepage/ref_=nav_dvm_crs_in_s_gw_bt_dk_p_hamburgr?ref_=avod_desktop_topnav
+          - listitem [ref=e136]:
+            - link "Sell" [ref=e138] [cursor=pointer]:
+              - /url: /b/32702023031?node=32702023031&ld=AZINSOANavDesktop_T3&ref_=nav_cs_sell_T3
+          - listitem [ref=e139]:
+            - link "Bestsellers" [ref=e141] [cursor=pointer]:
+              - /url: /gp/bestsellers/?ref_=nav_cs_bestsellers
+          - listitem [ref=e142]:
+            - link "Today's Deals" [ref=e144] [cursor=pointer]:
+              - /url: /deals?ref_=nav_cs_gb
+          - listitem [ref=e145]:
+            - link "Mobiles" [ref=e147] [cursor=pointer]:
+              - /url: /mobile-phones/b/?ie=UTF8&node=1389401031&ref_=nav_cs_mobiles
+          - listitem [ref=e148]:
+            - link "New Releases" [ref=e150] [cursor=pointer]:
+              - /url: /gp/new-releases/?ref_=nav_cs_newreleases
+          - listitem [ref=e151]:
+            - link "Customer Service" [ref=e153] [cursor=pointer]:
+              - /url: /gp/help/customer/display.html?nodeId=200507590&ref_=nav_cs_help
+          - listitem [ref=e154]:
+            - link "Electronics" [ref=e156] [cursor=pointer]:
+              - /url: /electronics/b/?ie=UTF8&node=976419031&ref_=nav_cs_electronics
+          - listitem [ref=e157]:
+            - generic [ref=e158]:
+              - link "Prime" [ref=e159] [cursor=pointer]:
+                - /url: /prime?ref_=nav_cs_primelink_nonmember
+              - button "Prime Details" [ref=e160] [cursor=pointer]
+          - listitem [ref=e161]:
+            - link "Amazon Pay" [ref=e163] [cursor=pointer]:
+              - /url: /gp/sva/dashboard?ref_=nav_cs_apay
+          - listitem [ref=e164]:
+            - link "Home & Kitchen" [ref=e166] [cursor=pointer]:
+              - /url: /Home-Kitchen/b/?ie=UTF8&node=976442031&ref_=nav_cs_home
+          - listitem [ref=e167]:
+            - link "Fashion" [ref=e169] [cursor=pointer]:
+              - /url: /gp/browse.html?node=6648217031&ref_=nav_cs_fashion
+          - listitem [ref=e170]:
+            - link "Computers" [ref=e172] [cursor=pointer]:
+              - /url: /computers-and-accessories/b/?ie=UTF8&node=976392031&ref_=nav_cs_pc
+          - listitem [ref=e173]:
+            - link "Grocery & Gourmet Foods" [ref=e175] [cursor=pointer]:
+              - /url: /Gourmet-Specialty-Foods/b/?ie=UTF8&node=2454178031&ref_=nav_cs_grocery
+          - listitem [ref=e176]:
+            - link "Car & Motorbike" [ref=e178] [cursor=pointer]:
+              - /url: /Car-Motorbike-Store/b/?ie=UTF8&node=4772060031&ref_=nav_cs_automotive
+          - listitem [ref=e179]:
+            - link "Video Games" [ref=e181] [cursor=pointer]:
+              - /url: /video-games/b/?ie=UTF8&node=976460031&ref_=nav_cs_video_games
+          - listitem [ref=e182]:
+            - link "Toys & Games" [ref=e184] [cursor=pointer]:
+              - /url: /Toys-Games/b/?ie=UTF8&node=1350380031&ref_=nav_cs_toys
+          - listitem [ref=e185]:
+            - link "Beauty & Personal Care" [ref=e187] [cursor=pointer]:
+              - /url: /beauty/b/?ie=UTF8&node=1355016031&ref_=nav_cs_beauty
+          - listitem [ref=e188]:
+            - link "Gift Cards" [ref=e190] [cursor=pointer]:
+              - /url: /gift-card-store/b/?ie=UTF8&node=3704982031&ref_=nav_cs_gc
+          - listitem [ref=e191]:
+            - link "Pet Supplies" [ref=e193] [cursor=pointer]:
+              - /url: /Pet-Supplies/b/?ie=UTF8&node=2454181031&ref_=nav_cs_pets
+          - listitem [ref=e194]:
+            - link "Sports, Fitness & Outdoors" [ref=e196] [cursor=pointer]:
+              - /url: /Sports/b/?ie=UTF8&node=1984443031&ref_=nav_cs_sports
+          - listitem [ref=e197]:
+            - link "Baby" [ref=e199] [cursor=pointer]:
+              - /url: /Baby/b/?ie=UTF8&node=1571274031&ref_=nav_cs_baby
+          - listitem [ref=e200]:
+            - link "Home Improvement" [ref=e202] [cursor=pointer]:
+              - /url: /Home-Improvement/b/?ie=UTF8&node=4286640031&ref_=nav_cs_hi
+          - listitem [ref=e203]:
+            - link "Health, Household & Personal Care" [ref=e205] [cursor=pointer]:
+              - /url: /health-and-personal-care/b/?ie=UTF8&node=1350384031&ref_=nav_cs_hpc
+          - listitem [ref=e206]:
+            - link "Custom Products" [ref=e208] [cursor=pointer]:
+              - /url: /Amazon-Custom/b/?ie=UTF8&node=32615889031&ref_=nav_cs_custom
+          - listitem [ref=e209]:
+            - link "Audible" [ref=e211] [cursor=pointer]:
+              - /url: /Audible-Books-and-Originals/b/?ie=UTF8&node=17941593031&ref_=nav_cs_audible
+          - listitem [ref=e212]:
+            - link "AmazonBasics" [ref=e214] [cursor=pointer]:
+              - /url: /b/?node=6637738031&ref_=nav_cs_amazonbasics
+          - listitem [ref=e215]:
+            - link "Subscribe & Save" [ref=e217] [cursor=pointer]:
+              - /url: /auto-deliveries/landing?ref_=nav_cs_sns
+          - listitem [ref=e218]:
+            - link "Kindle eBooks" [ref=e220] [cursor=pointer]:
+              - /url: /Kindle-eBooks/b/?ie=UTF8&node=1634753031&ref_=nav_cs_kindle_books
+          - listitem [ref=e221]:
+            - link "Amazon Pharmacy" [ref=e223] [cursor=pointer]:
+              - /url: /medical/browse/home?ref_=nav_navx-desco-pharma
+          - listitem [ref=e224]:
+            - link "Flights" [ref=e226] [cursor=pointer]:
+              - /url: /flights?ref_=nav_cs_apay_desktop_topnav_flights
+        - link "Jan26_Event" [ref=e230] [cursor=pointer]:
+          - /url: /events/greatindianfestival/?_encoding=UTF8&ref_=nav_swm_event&pf_rd_p=913c2c21-782e-4de5-909f-10ab3b6494e9&pf_rd_s=nav-sitewide-msg&pf_rd_t=4201&pf_rd_i=navbar-4201&pf_rd_m=A21TJRUUN4KGV&pf_rd_r=BD6AGZWQP3CEQ78T1J7S
+          - img "Jan26_Event" [ref=e231]
+      - list [ref=e234]:
+        - listitem [ref=e235]:
+          - link [ref=e237] [cursor=pointer]:
+            - /url: /electronics/b/?ie=UTF8&node=976419031&ref_=topnav_storetab_top_elec_mega
+            - img "Electronics" [ref=e239]
+        - listitem [ref=e240]:
+          - generic [ref=e241]:
+            - link "Mobiles & Accessories" [ref=e242] [cursor=pointer]:
+              - /url: /b/?_encoding=UTF8&node=1389401031&ref_=sv_top_elec_mega_1
+            - button "Mobiles & Accessories, You are currently on a drop-down. To open this drop-down, Press Enter." [ref=e243] [cursor=pointer]
+        - listitem [ref=e244]:
+          - generic [ref=e245]:
+            - link "Laptops & Accessories" [ref=e246] [cursor=pointer]:
+              - /url: /b/?_encoding=UTF8&node=976392031&ref_=sv_top_elec_mega_2
+            - button "Laptops & Accessories, You are currently on a drop-down. To open this drop-down, Press Enter." [ref=e247] [cursor=pointer]
+        - listitem [ref=e248]:
+          - generic [ref=e249]:
+            - link "TV & Home Entertainment" [ref=e250] [cursor=pointer]:
+              - /url: /b/?_encoding=UTF8&node=1389375031&ref_=sv_top_elec_mega_3
+            - button "TV & Home Entertainment, You are currently on a drop-down. To open this drop-down, Press Enter." [ref=e251] [cursor=pointer]
+        - listitem [ref=e252]:
+          - generic [ref=e253]:
+            - link "Audio" [ref=e254] [cursor=pointer]:
+              - /url: /b/?_encoding=UTF8&node=1389335031&ref_=sv_top_elec_mega_4
+            - button "Audio, You are currently on a drop-down. To open this drop-down, Press Enter." [ref=e255] [cursor=pointer]
+        - listitem [ref=e256]:
+          - generic [ref=e257]:
+            - link "Cameras" [ref=e258] [cursor=pointer]:
+              - /url: /b/?_encoding=UTF8&node=1388977031&ref_=sv_top_elec_mega_5
+            - button "Cameras, You are currently on a drop-down. To open this drop-down, Press Enter." [ref=e259] [cursor=pointer]
+        - listitem [ref=e260]:
+          - generic [ref=e261]:
+            - link "Computer Peripherals" [ref=e262] [cursor=pointer]:
+              - /url: /b/?_encoding=UTF8&node=1375248031&ref_=sv_top_elec_mega_6
+            - button "Computer Peripherals, You are currently on a drop-down. To open this drop-down, Press Enter." [ref=e263] [cursor=pointer]
+        - listitem [ref=e264]:
+          - generic [ref=e265]:
+            - link "Smart Technology" [ref=e266] [cursor=pointer]:
+              - /url: /b/?_encoding=UTF8&node=13773797031&ref_=sv_top_elec_mega_7
+            - button "Smart Technology, You are currently on a drop-down. To open this drop-down, Press Enter." [ref=e267] [cursor=pointer]
+        - listitem [ref=e268]:
+          - generic [ref=e269]:
+            - link "Musical Instruments" [ref=e270] [cursor=pointer]:
+              - /url: /b/?_encoding=UTF8&node=3677697031&ref_=sv_top_elec_mega_8
+            - button "Musical Instruments, You are currently on a drop-down. To open this drop-down, Press Enter." [ref=e271] [cursor=pointer]
+        - listitem [ref=e272]:
+          - generic [ref=e273]:
+            - link "Office & Stationery" [ref=e274] [cursor=pointer]:
+              - /url: /b/?_encoding=UTF8&node=2454172031&ref_=sv_top_elec_mega_9
+            - button "Office & Stationery, You are currently on a drop-down. To open this drop-down, Press Enter." [ref=e275] [cursor=pointer]
+      - dialog [ref=e276]
+  - generic [ref=e278]:
+    - generic [ref=e281]:
+      - list [ref=e291]:
+        - listitem [ref=e292]:
+          - generic [ref=e293]:
+            - generic:
+              - img "Live now" [ref=e294]
+              - generic [ref=e295]:
+                - link "Live now" [ref=e297] [cursor=pointer]:
+                  - /url: /l/1389402031?ref_=Br_MuCl_QAHzEditorial_en_IN_test_multiAk_1_1_1&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=2072c51e-6df2-4544-820d-84e342489e7b&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-1&pf_rd_t=&pf_rd_i=1389401031
+                  - text: Link
+                - link "Live now" [ref=e299] [cursor=pointer]:
+                  - /url: /dp/B0DSKL9MQ8?ref_=Br_MuCl_QAHzEditorial_en_IN_test_multiAk_1_1_2&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=2072c51e-6df2-4544-820d-84e342489e7b&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-1&pf_rd_t=&pf_rd_i=1389401031
+                  - text: Link
+                - link "Live now" [ref=e301] [cursor=pointer]:
+                  - /url: javascript:void(0)
+                  - text: Link
+                - link "Live now" [ref=e303] [cursor=pointer]:
+                  - /url: javascript:void(0)
+                  - text: Link
+                - link "Live now" [ref=e305] [cursor=pointer]:
+                  - /url: javascript:void(0)
+                  - text: Link
+                - link "Live now" [ref=e307] [cursor=pointer]:
+                  - /url: javascript:void(0)
+                  - text: Link
+                - link "Live now" [ref=e309] [cursor=pointer]:
+                  - /url: /l/220580777031?ref_=jup%2726_central_bank_stripe&ref_=Br_MuCl_QAHzEditorial_en_IN_test_multiAk_1_4_1&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=2072c51e-6df2-4544-820d-84e342489e7b&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-1&pf_rd_t=&pf_rd_i=1389401031
+                  - text: Link
+                - link "Live now" [ref=e311] [cursor=pointer]:
+                  - /url: /l/220580777031?ref_=jup%2726_central_bank_stripe&ref_=Br_MuCl_QAHzEditorial_en_IN_test_multiAk_1_4_2&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=2072c51e-6df2-4544-820d-84e342489e7b&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-1&pf_rd_t=&pf_rd_i=1389401031
+                  - text: Link
+                - link "Live now" [ref=e313] [cursor=pointer]:
+                  - /url: /b/ref=apay_afford_gsr_agif26?node=218389513031&ref_=Br_MuCl_QAHzEditorial_en_IN_test_multiAk_1_5_1&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=2072c51e-6df2-4544-820d-84e342489e7b&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-1&pf_rd_t=&pf_rd_i=1389401031
+                  - text: Link
+                - link "Live now" [ref=e315] [cursor=pointer]:
+                  - /url: /b/ref=apay_afford_gsr_agif26?node=218389513031&ref_=Br_MuCl_QAHzEditorial_en_IN_test_multiAk_1_5_2&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=2072c51e-6df2-4544-820d-84e342489e7b&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-1&pf_rd_t=&pf_rd_i=1389401031
+                  - text: Link
+      - generic [ref=e318]:
+        - group [ref=e319]:
+          - heading "Category" [level=1] [ref=e321]
+          - list "Category" [ref=e322]:
+            - listitem [ref=e323]:
+              - link "Electronics" [ref=e325] [cursor=pointer]:
+                - /url: /s?rh=n%3A976419031&dc&qid=1792153007&rnid=1389401031&ref=sr_nr_n_0
+            - listitem [ref=e327]:
+              - heading "Mobiles & Accessories" [level=2] [ref=e329]
+            - listitem [ref=e330]:
+              - link "Mobile Accessories" [ref=e332] [cursor=pointer]:
+                - /url: /s?rh=n%3A976419031%2Cn%3A1389401031%2Cn%3A1389402031&dc&qid=1792153007&rnid=1389401031&ref=sr_nr_n_2
+            - listitem [ref=e333]:
+              - link "Mobile Broadband Devices" [ref=e335] [cursor=pointer]:
+                - /url: /s?rh=n%3A976419031%2Cn%3A1389401031%2Cn%3A1375430031&dc&qid=1792153007&rnid=1389401031&ref=sr_nr_n_3
+            - listitem [ref=e336]:
+              - link "SIM Cards" [ref=e338] [cursor=pointer]:
+                - /url: /s?rh=n%3A976419031%2Cn%3A1389401031%2Cn%3A1389431031&dc&qid=1792153007&rnid=1389401031&ref=sr_nr_n_4
+            - listitem [ref=e339]:
+              - link "Smartphones & Basic Mobiles" [ref=e341] [cursor=pointer]:
+                - /url: /s?rh=n%3A976419031%2Cn%3A1389401031%2Cn%3A1389432031&dc&qid=1792153007&rnid=1389401031&ref=sr_nr_n_5
+            - listitem [ref=e342]:
+              - link "Smartwatches" [ref=e344] [cursor=pointer]:
+                - /url: /s?rh=n%3A976419031%2Cn%3A1389401031%2Cn%3A5605728031&dc&qid=1792153007&rnid=1389401031&ref=sr_nr_n_6
+        - group [ref=e345]:
+          - generic [ref=e346]: Amazon Prime
+          - list "Amazon Prime" [ref=e347]:
+            - listitem [ref=e348]:
+              - link [ref=e350] [cursor=pointer]:
+                - /url: /s?rh=n%3A1389401031%2Cp_85%3A10440599031&dc&qid=1792153007&rnid=10440598031&ref=sr_nr_p_85_1
+                - generic [ref=e352]:
+                  - checkbox "Prime Eligible" [ref=e353]
+                  - generic: Prime Eligible
+                - img "Prime Eligible" [ref=e355]
+        - group [ref=e356]:
+          - generic [ref=e357]: Delivery Day
+          - list "Delivery Day" [ref=e358]:
+            - listitem [ref=e359]:
+              - link [ref=e361] [cursor=pointer]:
+                - /url: /s?rh=n%3A1389401031%2Cp_90%3A6741118031&dc&qid=1792153007&rnid=6741116031&ref=sr_nr_p_90_0
+                - generic [ref=e363]:
+                  - checkbox "Get It by Tomorrow" [ref=e364]
+                  - generic: Get It by Tomorrow
+                - text: Get It by Tomorrow
+        - group [ref=e366]:
+          - generic [ref=e367]: Brands
+          - list "Brands" [ref=e368]:
+            - listitem [ref=e369]:
+              - link [ref=e371] [cursor=pointer]:
+                - /url: /s?rh=n%3A1389401031%2Cp_123%3A110955&dc&qid=1792153007&rnid=91049095031&ref=sr_nr_p_123_0
+                - generic [ref=e373]:
+                  - checkbox "Apple" [ref=e374]
+                  - generic: Apple
+                - text: Apple
+            - listitem [ref=e376]:
+              - link [ref=e378] [cursor=pointer]:
+                - /url: /s?rh=n%3A1389401031%2Cp_123%3A253649&dc&qid=1792153007&rnid=91049095031&ref=sr_nr_p_123_1
+                - generic [ref=e380]:
+                  - checkbox "OnePlus" [ref=e381]
+                  - generic: OnePlus
+                - text: OnePlus
+            - listitem [ref=e383]:
+              - link [ref=e385] [cursor=pointer]:
+                - /url: /s?rh=n%3A1389401031%2Cp_123%3A146762&dc&qid=1792153007&rnid=91049095031&ref=sr_nr_p_123_2
+                - generic [ref=e387]:
+                  - checkbox "Motorola" [ref=e388]
+                  - generic: Motorola
+                - text: Motorola
+            - listitem [ref=e390]:
+              - link [ref=e392] [cursor=pointer]:
+                - /url: /s?rh=n%3A1389401031%2Cp_123%3A339703&dc&qid=1792153007&rnid=91049095031&ref=sr_nr_p_123_3
+                - generic [ref=e394]:
+                  - checkbox "Redmi" [ref=e395]
+                  - generic: Redmi
+                - text: Redmi
+            - listitem [ref=e397]:
+              - link [ref=e399] [cursor=pointer]:
+                - /url: /s?rh=n%3A1389401031%2Cp_123%3A568349&dc&qid=1792153007&rnid=91049095031&ref=sr_nr_p_123_4
+                - generic [ref=e401]:
+                  - checkbox "realme" [ref=e402]
+                  - generic: realme
+                - text: realme
+            - listitem [ref=e404]:
+              - link [ref=e406] [cursor=pointer]:
+                - /url: /s?rh=n%3A1389401031%2Cp_123%3A329744&dc&qid=1792153007&rnid=91049095031&ref=sr_nr_p_123_5
+                - generic [ref=e408]:
+                  - checkbox "Nokia" [ref=e409]
+                  - generic: Nokia
+                - text: Nokia
+            - listitem [ref=e411]:
+              - link [ref=e413] [cursor=pointer]:
+                - /url: /s?rh=n%3A1389401031%2Cp_123%3A13145&dc&qid=1792153007&rnid=91049095031&ref=sr_nr_p_123_6
+                - generic [ref=e415]:
+                  - checkbox "vivo" [ref=e416]
+                  - generic: vivo
+                - text: vivo
+            - listitem [ref=e418]:
+              - link [ref=e420] [cursor=pointer]:
+                - /url: /s?rh=n%3A1389401031%2Cp_123%3A338933&dc&qid=1792153007&rnid=91049095031&ref=sr_nr_p_123_7
+                - generic [ref=e422]:
+                  - checkbox "Xiaomi" [ref=e423]
+                  - generic: Xiaomi
+                - text: Xiaomi
+            - listitem [ref=e425]:
+              - link [ref=e427] [cursor=pointer]:
+                - /url: /s?rh=n%3A1389401031%2Cp_123%3A109035&dc&qid=1792153007&rnid=91049095031&ref=sr_nr_p_123_8
+                - generic [ref=e429]:
+                  - checkbox "Ambrane" [ref=e430]
+                  - generic: Ambrane
+                - text: Ambrane
+        - group [ref=e432]:
+          - generic [ref=e433]: Customer Reviews
+          - list "Customer Reviews" [ref=e434]:
+            - listitem [ref=e435]:
+              - generic "4 Stars & Up" [ref=e437]:
+                - link "4 Stars & Up & Up" [ref=e438] [cursor=pointer]:
+                  - /url: /s?rh=n%3A1389401031%2Cp_72%3A1318476031&dc&qid=1792153007&rnid=1318475031&ref=sr_nr_p_72_0
+                  - generic [ref=e439]: 4 Stars & Up
+                  - text: "& Up"
+        - group [ref=e441]:
+          - generic [ref=e442]: Item Condition
+          - list "Item Condition" [ref=e443]:
+            - listitem [ref=e444]:
+              - link [ref=e446] [cursor=pointer]:
+                - /url: /s?rh=n%3A1389401031%2Cp_n_condition-type%3A8609960031&dc&qid=1792153007&rnid=8609959031&ref=sr_nr_p_n_condition-type_0
+                - generic [ref=e448]:
+                  - checkbox "New" [ref=e449]
+                  - generic: New
+                - text: New
+        - group [ref=e451]:
+          - generic [ref=e452]: Price
+          - list "Price" [ref=e453]:
+            - listitem [ref=e454]:
+              - link "Under ₹1,000" [ref=e456] [cursor=pointer]:
+                - /url: /s?rh=n%3A1389401031%2Cp_36%3A-99999&dc&qid=1792153007&rnid=1318502031&ref=sr_nr_p_36_0
+            - listitem [ref=e457]:
+              - link "₹1,000 - ₹5,000" [ref=e459] [cursor=pointer]:
+                - /url: /s?rh=n%3A1389401031%2Cp_36%3A100000-500000&dc&qid=1792153007&rnid=1318502031&ref=sr_nr_p_36_1
+            - listitem [ref=e460]:
+              - link "₹5,000 - ₹10,000" [ref=e462] [cursor=pointer]:
+                - /url: /s?rh=n%3A1389401031%2Cp_36%3A500000-1000000&dc&qid=1792153007&rnid=1318502031&ref=sr_nr_p_36_2
+            - listitem [ref=e463]:
+              - link "₹10,000 - ₹20,000" [ref=e465] [cursor=pointer]:
+                - /url: /s?rh=n%3A1389401031%2Cp_36%3A1000000-2000000&dc&qid=1792153007&rnid=1318502031&ref=sr_nr_p_36_3
+            - listitem [ref=e466]:
+              - link "Over ₹20,000" [ref=e468] [cursor=pointer]:
+                - /url: /s?rh=n%3A1389401031%2Cp_36%3A2000000-&dc&qid=1792153007&rnid=1318502031&ref=sr_nr_p_36_4
+        - group [ref=e469]:
+          - generic [ref=e470]: Deals & Discounts
+          - list "Deals & Discounts" [ref=e471]:
+            - listitem [ref=e472]:
+              - link "Great Indian Festival" [ref=e474] [cursor=pointer]:
+                - /url: /s?rh=n%3A1389401031%2Cp_n_deal_type%3A26921224031&dc&qid=1792153007&rnid=26921223031&ref=sr_nr_p_n_deal_type_0
+        - group [ref=e475]:
+          - generic [ref=e476]: Made for Amazon Brands
+          - list "Made for Amazon Brands" [ref=e477]:
+            - listitem [ref=e478]:
+              - link [ref=e480] [cursor=pointer]:
+                - /url: /s?rh=n%3A1389401031%2Cp_n_is_private_label%3A16184648031&dc&qid=1792153007&rnid=16184647031&ref=sr_nr_p_n_is_private_label_0
+                - generic [ref=e482]:
+                  - checkbox "Made for Amazon" [ref=e483]
+                  - generic: Made for Amazon
+                - text: Made for Amazon
+        - group [ref=e485]:
+          - generic [ref=e486]: Seller
+          - list "Seller" [ref=e487]:
+            - listitem [ref=e488]:
+              - link [ref=e490] [cursor=pointer]:
+                - /url: /s?rh=n%3A1389401031%2Cp_6%3AA1WYWER0W24N8S&dc&qid=1792153007&rnid=1318474031&ref=sr_nr_p_6_0
+                - generic [ref=e492]:
+                  - checkbox "Cocoblu Retail" [ref=e493]
+                  - generic: Cocoblu Retail
+                - text: Cocoblu Retail
+            - listitem [ref=e495]:
+              - link [ref=e497] [cursor=pointer]:
+                - /url: /s?rh=n%3A1389401031%2Cp_6%3AAJ6SIZC8YQDZX&dc&qid=1792153007&rnid=1318474031&ref=sr_nr_p_6_1
+                - generic [ref=e499]:
+                  - checkbox "Clicktech Retail Private Ltd" [ref=e500]
+                  - generic: Clicktech Retail Private Ltd
+                - text: Clicktech Retail Private Ltd
+            - listitem [ref=e502]:
+              - link [ref=e504] [cursor=pointer]:
+                - /url: /s?rh=n%3A1389401031%2Cp_6%3AA3RU4MEDJKV1YX&dc&qid=1792153007&rnid=1318474031&ref=sr_nr_p_6_2
+                - generic [ref=e506]:
+                  - checkbox "TheGiftKart" [ref=e507]
+                  - generic: TheGiftKart
+                - text: TheGiftKart
+            - listitem [ref=e509]:
+              - link [ref=e511] [cursor=pointer]:
+                - /url: /s?rh=n%3A1389401031%2Cp_6%3AA34RBS7MAVZ4G4&dc&qid=1792153007&rnid=1318474031&ref=sr_nr_p_6_3
+                - generic [ref=e513]:
+                  - checkbox "Clicktech Business" [ref=e514]
+                  - generic: Clicktech Business
+                - text: Clicktech Business
+            - listitem [ref=e516]:
+              - link [ref=e518] [cursor=pointer]:
+                - /url: /s?rh=n%3A1389401031%2Cp_6%3AAOZGX6V4986EX&dc&qid=1792153007&rnid=1318474031&ref=sr_nr_p_6_4
+                - generic [ref=e520]:
+                  - checkbox "VONZEE®" [ref=e521]
+                  - generic: VONZEE®
+                - text: VONZEE®
+            - listitem [ref=e523]:
+              - link [ref=e525] [cursor=pointer]:
+                - /url: /s?rh=n%3A1389401031%2Cp_6%3AA38PGPSKYXZJ7J&dc&qid=1792153007&rnid=1318474031&ref=sr_nr_p_6_5
+                - generic [ref=e527]:
+                  - checkbox "COLORFLOW" [ref=e528]
+                  - generic: COLORFLOW
+                - text: COLORFLOW
+            - listitem [ref=e530]:
+              - link [ref=e532] [cursor=pointer]:
+                - /url: /s?rh=n%3A1389401031%2Cp_6%3AA1AB7A2OJIB1ZC&dc&qid=1792153007&rnid=1318474031&ref=sr_nr_p_6_6
+                - generic [ref=e534]:
+                  - checkbox "DIZORO" [ref=e535]
+                  - generic: DIZORO
+                - text: DIZORO
+        - group [ref=e537]:
+          - generic [ref=e538]: Top Brands in Electronics
+          - list "Top Brands in Electronics" [ref=e539]:
+            - listitem [ref=e540]:
+              - link [ref=e542] [cursor=pointer]:
+                - /url: /s?rh=n%3A1389401031%2Cp_n_g-101014971069111%3A206270883031&dc&qid=1792153007&rnid=206270882031&ref=sr_nr_p_n_g-101014971069111_0
+                - generic [ref=e544]:
+                  - checkbox "Top Brands" [ref=e545]
+                  - generic: Top Brands
+                - text: Top Brands
+        - group [ref=e547]:
+          - generic [ref=e548]: Customizable Products
+          - list "Customizable Products" [ref=e549]:
+            - listitem [ref=e550]:
+              - link [ref=e552] [cursor=pointer]:
+                - /url: /s?rh=n%3A1389401031%2Cp_n_customizable_template_name%3A206762212031&dc&qid=1792153007&rnid=206762211031&ref=sr_nr_p_n_customizable_template_name_0
+                - generic [ref=e554]:
+                  - checkbox "Customizable" [ref=e555]
+                  - generic: Customizable
+                - text: Customizable
+        - group [ref=e557]:
+          - generic [ref=e558]: Discount
+          - list "Discount" [ref=e559]:
+            - listitem [ref=e560]:
+              - link "10% Off or more" [ref=e562] [cursor=pointer]:
+                - /url: /s?rh=n%3A1389401031%2Cp_n_pct-off-with-tax%3A2665399031&dc&qid=1792153007&rnid=2665398031&ref=sr_nr_p_n_pct-off-with-tax_0
+            - listitem [ref=e563]:
+              - link "25% Off or more" [ref=e565] [cursor=pointer]:
+                - /url: /s?rh=n%3A1389401031%2Cp_n_pct-off-with-tax%3A2665400031&dc&qid=1792153007&rnid=2665398031&ref=sr_nr_p_n_pct-off-with-tax_1
+            - listitem [ref=e566]:
+              - link "35% Off or more" [ref=e568] [cursor=pointer]:
+                - /url: /s?rh=n%3A1389401031%2Cp_n_pct-off-with-tax%3A2665402031&dc&qid=1792153007&rnid=2665398031&ref=sr_nr_p_n_pct-off-with-tax_2
+            - listitem [ref=e569]:
+              - link "50% Off or more" [ref=e571] [cursor=pointer]:
+                - /url: /s?rh=n%3A1389401031%2Cp_n_pct-off-with-tax%3A2665401031&dc&qid=1792153007&rnid=2665398031&ref=sr_nr_p_n_pct-off-with-tax_3
+            - listitem [ref=e572]:
+              - link "60% Off or more" [ref=e574] [cursor=pointer]:
+                - /url: /s?rh=n%3A1389401031%2Cp_n_pct-off-with-tax%3A27060456031&dc&qid=1792153007&rnid=2665398031&ref=sr_nr_p_n_pct-off-with-tax_4
+            - listitem [ref=e575]:
+              - link "70% Off or more" [ref=e577] [cursor=pointer]:
+                - /url: /s?rh=n%3A1389401031%2Cp_n_pct-off-with-tax%3A27060457031&dc&qid=1792153007&rnid=2665398031&ref=sr_nr_p_n_pct-off-with-tax_5
+        - group [ref=e578]:
+          - generic [ref=e579]: Availability
+          - list "Availability" [ref=e580]:
+            - listitem [ref=e581]:
+              - link [ref=e583] [cursor=pointer]:
+                - /url: /s?rh=n%3A1389401031%2Cp_n_availability%3A1318485031&dc&qid=1792153007&rnid=1318483031&ref=sr_nr_p_n_availability_1
+                - generic [ref=e585]:
+                  - checkbox "Include Out of Stock" [ref=e586]
+                  - generic: Include Out of Stock
+                - text: Include Out of Stock
+        - group [ref=e588]:
+          - generic [ref=e589]: New Arrivals
+          - list "New Arrivals" [ref=e590]:
+            - listitem [ref=e591]:
+              - link "Last 30 days" [ref=e593] [cursor=pointer]:
+                - /url: /s?rh=n%3A1389401031%2Cp_n_date_first_available_absolute%3A1318487031&dc&qid=1792153007&rnid=1318486031&ref=sr_nr_p_n_date_first_available_absolute_0
+            - listitem [ref=e594]:
+              - link "Last 90 days" [ref=e596] [cursor=pointer]:
+                - /url: /s?rh=n%3A1389401031%2Cp_n_date_first_available_absolute%3A1318488031&dc&qid=1792153007&rnid=1318486031&ref=sr_nr_p_n_date_first_available_absolute_1
+        - group [ref=e597]:
+          - generic [ref=e598]: Pay On Delivery
+          - list "Pay On Delivery" [ref=e599]:
+            - listitem [ref=e600]:
+              - link [ref=e602] [cursor=pointer]:
+                - /url: /s?rh=n%3A1389401031%2Cp_n_is_cod_eligible%3A4931671031&dc&qid=1792153007&rnid=4931670031&ref=sr_nr_p_n_is_cod_eligible_0
+                - generic [ref=e604]:
+                  - checkbox "Eligible for Pay On Delivery" [ref=e605]
+                  - generic: Eligible for Pay On Delivery
+                - text: Eligible for Pay On Delivery
+        - group [ref=e607]:
+          - generic [ref=e608]: Country of Origin
+          - list "Country of Origin" [ref=e609]:
+            - listitem [ref=e610]:
+              - link [ref=e612] [cursor=pointer]:
+                - /url: /s?rh=n%3A1389401031%2Cp_country_of_origin-bin%3AIN&dc&qid=1792153007&rnid=215263484031&ref=sr_nr_p_country_of_origin-bin_0
+                - generic [ref=e614]:
+                  - checkbox "India" [ref=e615]
+                  - generic: India
+                - text: India
+            - listitem [ref=e617]:
+              - link [ref=e619] [cursor=pointer]:
+                - /url: /s?rh=n%3A1389401031%2Cp_country_of_origin-bin%3ACN&dc&qid=1792153007&rnid=215263484031&ref=sr_nr_p_country_of_origin-bin_1
+                - generic [ref=e621]:
+                  - checkbox "China" [ref=e622]
+                  - generic: China
+                - text: China
+            - listitem [ref=e624]:
+              - link [ref=e626] [cursor=pointer]:
+                - /url: /s?rh=n%3A1389401031%2Cp_country_of_origin-bin%3AUS&dc&qid=1792153007&rnid=215263484031&ref=sr_nr_p_country_of_origin-bin_2
+                - generic [ref=e628]:
+                  - checkbox "United States" [ref=e629]
+                  - generic: United States
+                - text: United States
+            - listitem [ref=e631]:
+              - link [ref=e633] [cursor=pointer]:
+                - /url: /s?rh=n%3A1389401031%2Cp_country_of_origin-bin%3AKR&dc&qid=1792153007&rnid=215263484031&ref=sr_nr_p_country_of_origin-bin_3
+                - generic [ref=e635]:
+                  - checkbox "South Korea" [ref=e636]
+                  - generic: South Korea
+                - text: South Korea
+            - listitem [ref=e638]:
+              - link [ref=e640] [cursor=pointer]:
+                - /url: /s?rh=n%3A1389401031%2Cp_country_of_origin-bin%3AHK&dc&qid=1792153007&rnid=215263484031&ref=sr_nr_p_country_of_origin-bin_4
+                - generic [ref=e642]:
+                  - checkbox "Hong Kong" [ref=e643]
+                  - generic: Hong Kong
+                - text: Hong Kong
+            - listitem [ref=e645]:
+              - link [ref=e647] [cursor=pointer]:
+                - /url: /s?rh=n%3A1389401031%2Cp_country_of_origin-bin%3AVN&dc&qid=1792153007&rnid=215263484031&ref=sr_nr_p_country_of_origin-bin_5
+                - generic [ref=e649]:
+                  - checkbox "Vietnam" [ref=e650]
+                  - generic: Vietnam
+                - text: Vietnam
+            - listitem [ref=e652]:
+              - link [ref=e654] [cursor=pointer]:
+                - /url: /s?rh=n%3A1389401031%2Cp_country_of_origin-bin%3ATW&dc&qid=1792153007&rnid=215263484031&ref=sr_nr_p_country_of_origin-bin_6
+                - generic [ref=e656]:
+                  - checkbox "Taiwan" [ref=e657]
+                  - generic: Taiwan
+                - text: Taiwan
+            - listitem [ref=e659]:
+              - link [ref=e661] [cursor=pointer]:
+                - /url: /s?rh=n%3A1389401031%2Cp_country_of_origin-bin%3AAU&dc&qid=1792153007&rnid=215263484031&ref=sr_nr_p_country_of_origin-bin_7
+                - generic [ref=e663]:
+                  - checkbox "Australia" [ref=e664]
+                  - generic: Australia
+                - text: Australia
+            - listitem [ref=e666]:
+              - link [ref=e668] [cursor=pointer]:
+                - /url: /s?rh=n%3A1389401031%2Cp_country_of_origin-bin%3AFR&dc&qid=1792153007&rnid=215263484031&ref=sr_nr_p_country_of_origin-bin_8
+                - generic [ref=e670]:
+                  - checkbox "France" [ref=e671]
+                  - generic: France
+                - text: France
+            - listitem [ref=e673]:
+              - link [ref=e675] [cursor=pointer]:
+                - /url: /s?rh=n%3A1389401031%2Cp_country_of_origin-bin%3AMY&dc&qid=1792153007&rnid=215263484031&ref=sr_nr_p_country_of_origin-bin_9
+                - generic [ref=e677]:
+                  - checkbox "Malaysia" [ref=e678]
+                  - generic: Malaysia
+                - text: Malaysia
+      - generic [ref=e680]:
+        - link [ref=e690] [cursor=pointer]:
+          - /url: /dp/B0FTRN7L8Q?_encoding=UTF8&ref_=cct_cg_Budget_1a1&pf_rd_p=cbbff499-6ff8-45ce-b47d-f0d44d7e0eae&pf_rd_r=BD6AGZWQP3CEQ78T1J7S
+          - img "op 15" [ref=e691]
+        - list [ref=e700]:
+          - listitem [ref=e701]:
+            - generic [ref=e702]:
+              - generic:
+                - img "Live now" [ref=e703]
+                - generic [ref=e704]:
+                  - link "Live now" [ref=e706] [cursor=pointer]:
+                    - /url: /dp/B0DSKL9MQ8?ref_=Br_MuCl_QAHzEditorial_en_IN_test_multiAk_1_1_1&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=8b043c4a-56d7-481a-aa16-708bdf336189&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-6&pf_rd_t=&pf_rd_i=1389401031
+                    - text: Link
+                  - link "Live now" [ref=e708] [cursor=pointer]:
+                    - /url: /dp/B0DSKL9MQ8?ref_=Br_MuCl_QAHzEditorial_en_IN_test_multiAk_1_2_1&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=8b043c4a-56d7-481a-aa16-708bdf336189&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-6&pf_rd_t=&pf_rd_i=1389401031
+                    - text: Link
+                  - link "Live now" [ref=e710] [cursor=pointer]:
+                    - /url: /dp/B0DGJHBX5Y?ref_=Br_MuCl_QAHzEditorial_en_IN_test_multiAk_1_3_1&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=8b043c4a-56d7-481a-aa16-708bdf336189&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-6&pf_rd_t=&pf_rd_i=1389401031
+                    - text: Link
+                  - link "Live now" [ref=e712] [cursor=pointer]:
+                    - /url: /dp/B0DGJHBX5Y?ref_=Br_MuCl_QAHzEditorial_en_IN_test_multiAk_1_4_1&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=8b043c4a-56d7-481a-aa16-708bdf336189&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-6&pf_rd_t=&pf_rd_i=1389401031
+                    - text: Link
+                  - link "Live now" [ref=e714] [cursor=pointer]:
+                    - /url: /dp/B0HJB9LQCZ?ref_=Br_MuCl_QAHzEditorial_en_IN_test_multiAk_1_5_1&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=8b043c4a-56d7-481a-aa16-708bdf336189&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-6&pf_rd_t=&pf_rd_i=1389401031
+                    - text: Link
+        - list [ref=e723]:
+          - listitem [ref=e724]:
+            - generic [ref=e725]:
+              - generic:
+                - img "Live now" [ref=e726]
+                - generic [ref=e727]:
+                  - link "Live now" [ref=e729] [cursor=pointer]:
+                    - /url: /dp/B0FDL5T1PF?ref_=Br_MuCl_QAHzEditorial_en_IN_test_multiAk_1_1_1&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=6fb2602a-c996-4215-abc8-0f5fc7773ce6&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-8&pf_rd_t=&pf_rd_i=1389401031
+                    - text: Link
+                  - link "Live now" [ref=e731] [cursor=pointer]:
+                    - /url: /dp/B0H1WY55ZL?ref_=Br_MuCl_QAHzEditorial_en_IN_test_multiAk_1_1_2&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=6fb2602a-c996-4215-abc8-0f5fc7773ce6&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-8&pf_rd_t=&pf_rd_i=1389401031
+                    - text: Link
+                  - link "Live now" [ref=e733] [cursor=pointer]:
+                    - /url: /dp/B0H4LBXQDC?ref_=Br_MuCl_QAHzEditorial_en_IN_test_multiAk_1_1_3&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=6fb2602a-c996-4215-abc8-0f5fc7773ce6&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-8&pf_rd_t=&pf_rd_i=1389401031
+                    - text: Link
+                  - link "Live now" [ref=e735] [cursor=pointer]:
+                    - /url: /dp/B0FDL5T1PF?ref_=Br_MuCl_QAHzEditorial_en_IN_test_multiAk_1_2_1&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=6fb2602a-c996-4215-abc8-0f5fc7773ce6&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-8&pf_rd_t=&pf_rd_i=1389401031
+                    - text: Link
+                  - link "Live now" [ref=e737] [cursor=pointer]:
+                    - /url: /dp/B0H1WY55ZL?ref_=Br_MuCl_QAHzEditorial_en_IN_test_multiAk_1_2_2&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=6fb2602a-c996-4215-abc8-0f5fc7773ce6&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-8&pf_rd_t=&pf_rd_i=1389401031
+                    - text: Link
+                  - link "Live now" [ref=e739] [cursor=pointer]:
+                    - /url: /dp/B0H4LBXQDC?ref_=Br_MuCl_QAHzEditorial_en_IN_test_multiAk_1_2_3&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=6fb2602a-c996-4215-abc8-0f5fc7773ce6&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-8&pf_rd_t=&pf_rd_i=1389401031
+                    - text: Link
+                  - link "Live now" [ref=e741] [cursor=pointer]:
+                    - /url: /dp/B0FDL5T1PF?ref_=Br_MuCl_QAHzEditorial_en_IN_test_multiAk_1_3_1&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=6fb2602a-c996-4215-abc8-0f5fc7773ce6&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-8&pf_rd_t=&pf_rd_i=1389401031
+                    - text: Link
+                  - link "Live now" [ref=e743] [cursor=pointer]:
+                    - /url: /dp/B0H1WY55ZL?ref_=Br_MuCl_QAHzEditorial_en_IN_test_multiAk_1_3_2&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=6fb2602a-c996-4215-abc8-0f5fc7773ce6&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-8&pf_rd_t=&pf_rd_i=1389401031
+                    - text: Link
+                  - link "Live now" [ref=e745] [cursor=pointer]:
+                    - /url: /dp/B0H4LBXQDC?ref_=Br_MuCl_QAHzEditorial_en_IN_test_multiAk_1_3_3&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=6fb2602a-c996-4215-abc8-0f5fc7773ce6&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-8&pf_rd_t=&pf_rd_i=1389401031
+                    - text: Link
+        - generic [ref=e748]:
+          - list [ref=e754]:
+            - listitem [ref=e755]:
+              - link "heroalt1" [ref=e756] [cursor=pointer]:
+                - /url: /b?node=1389401031&ref_=QAHzEditorial_en_IN_AugArt26_AF_SD_1&pf_rd_r=7F6C49D47531490BB749&pf_rd_p=afe3a2a3-f4df-453c-aee6-529190dd7ba0&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-10_CW&pf_rd_t=&pf_rd_i=1389401031
+                - img "heroalt1" [ref=e758]
+          - list [ref=e764]:
+            - listitem [ref=e765]:
+              - link "ONePlus 15R(12+256)" [ref=e766] [cursor=pointer]:
+                - /url: /dp/B0FTRN7L8Q?ref_=QAHzEditorial_en_IN_AugArt26_AF_SD_1&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=afe3a2a3-f4df-453c-aee6-529190dd7ba0&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-10&pf_rd_t=&pf_rd_i=1389401031
+                - img "ONePlus 15R(12+256)" [ref=e768]
+            - listitem [ref=e769]:
+              - link "Redmi 15C Prime" [ref=e770] [cursor=pointer]:
+                - /url: /dp/B0G2B39291?ref_=QAHzEditorial_en_IN_AugArt26_AF_SD_2&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=afe3a2a3-f4df-453c-aee6-529190dd7ba0&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-10&pf_rd_t=&pf_rd_i=1389401031
+                - img "Redmi 15C Prime" [ref=e772]
+            - listitem [ref=e773]:
+              - link "Z11xa" [ref=e774] [cursor=pointer]:
+                - /url: /dp/B0HG96MZ9P?ref_=QAHzEditorial_en_IN_AugArt26_AF_SD_3&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=afe3a2a3-f4df-453c-aee6-529190dd7ba0&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-10&pf_rd_t=&pf_rd_i=1389401031
+                - img "Z11xa" [ref=e776]
+            - listitem [ref=e777]:
+              - link "Zeno 300" [ref=e778] [cursor=pointer]:
+                - /url: /dp/B0HJ2PR3FN?ref_=QAHzEditorial_en_IN_AugArt26_AF_SD_4&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=afe3a2a3-f4df-453c-aee6-529190dd7ba0&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-10&pf_rd_t=&pf_rd_i=1389401031
+                - img "Zeno 300" [ref=e780]
+            - listitem [ref=e781]:
+              - link "OnePlus N6x (4+128)" [ref=e782] [cursor=pointer]:
+                - /url: /dp/B0H7S6LT9P?ref_=QAHzEditorial_en_IN_AugArt26_AF_SD_5&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=afe3a2a3-f4df-453c-aee6-529190dd7ba0&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-10&pf_rd_t=&pf_rd_i=1389401031
+                - img "OnePlus N6x (4+128)" [ref=e784]
+            - listitem [ref=e785]:
+              - link "Z11" [ref=e786] [cursor=pointer]:
+                - /url: /dp/B0HCNHGQDD?ref_=QAHzEditorial_en_IN_AugArt26_AF_SD_6&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=afe3a2a3-f4df-453c-aee6-529190dd7ba0&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-10&pf_rd_t=&pf_rd_i=1389401031
+                - img "Z11" [ref=e788]
+        - list [ref=e797]:
+          - listitem [ref=e798]:
+            - generic [ref=e799]:
+              - generic:
+                - img "Live now" [ref=e800]
+                - generic [ref=e801]:
+                  - link "Live now" [ref=e803] [cursor=pointer]:
+                    - /url: javascript:void(0)
+                    - text: Link
+                  - link "Live now" [ref=e805] [cursor=pointer]:
+                    - /url: javascript:void(0)
+                    - text: Link
+                  - link "Live now" [ref=e807] [cursor=pointer]:
+                    - /url: javascript:void(0)
+                    - text: Link
+                  - link "Live now" [ref=e809] [cursor=pointer]:
+                    - /url: /l/215456035031?ref_=Br_MuCl_QAHzEditorial_en_IN_test_multiAk_1_2_1&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=f2049da9-24f6-4530-a552-85433e5c223c&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-15&pf_rd_t=&pf_rd_i=1389401031
+                    - text: Link
+                  - link "Live now" [ref=e811] [cursor=pointer]:
+                    - /url: /l/68424881031?ref_=Br_MuCl_QAHzEditorial_en_IN_test_multiAk_1_2_2&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=f2049da9-24f6-4530-a552-85433e5c223c&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-15&pf_rd_t=&pf_rd_i=1389401031
+                    - text: Link
+                  - link "Live now" [ref=e813] [cursor=pointer]:
+                    - /url: /l/27063224031?ref_=Br_MuCl_QAHzEditorial_en_IN_test_multiAk_1_2_3&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=f2049da9-24f6-4530-a552-85433e5c223c&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-15&pf_rd_t=&pf_rd_i=1389401031
+                    - text: Link
+                  - link "Live now" [ref=e815] [cursor=pointer]:
+                    - /url: javascript:void(0)
+                    - text: Link
+                  - link "Live now" [ref=e817] [cursor=pointer]:
+                    - /url: /l/222938033031?ref_=Br_MuCl_QAHzEditorial_en_IN_test_multiAk_1_3_2&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=f2049da9-24f6-4530-a552-85433e5c223c&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-15&pf_rd_t=&pf_rd_i=1389401031
+                    - text: Link
+                  - link "Live now" [ref=e819] [cursor=pointer]:
+                    - /url: /l/215454451031?ref_=Br_MuCl_QAHzEditorial_en_IN_test_multiAk_1_3_3&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=f2049da9-24f6-4530-a552-85433e5c223c&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-15&pf_rd_t=&pf_rd_i=1389401031
+                    - text: Link
+        - generic [ref=e822]:
+          - list [ref=e828]:
+            - listitem [ref=e829]:
+              - link "heroalt1" [ref=e830] [cursor=pointer]:
+                - /url: /b?node=1389401031&ref_=QAHzEditorial_en_IN_AugArt26_AF_SD_1&pf_rd_r=2833410426634B0589E3&pf_rd_p=60614cde-c188-40fc-8170-1cf37eaafca5&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-16_CW&pf_rd_t=&pf_rd_i=1389401031
+                - img "heroalt1" [ref=e832]
+          - list [ref=e838]:
+            - listitem [ref=e839]:
+              - link "iphone" [ref=e840] [cursor=pointer]:
+                - /url: /dp/B0DSKL9MQ8?ref_=QAHzEditorial_en_IN_AugArt26_AF_SD_1&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=60614cde-c188-40fc-8170-1cf37eaafca5&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-16&pf_rd_t=&pf_rd_i=1389401031
+                - img "iphone" [ref=e842]
+            - listitem [ref=e843]:
+              - link "sam" [ref=e844] [cursor=pointer]:
+                - /url: /dp/B0GWLHVJRH?ref_=QAHzEditorial_en_IN_AugArt26_AF_SD_2&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=60614cde-c188-40fc-8170-1cf37eaafca5&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-16&pf_rd_t=&pf_rd_i=1389401031
+                - img "sam" [ref=e846]
+            - listitem [ref=e847]:
+              - link "CE6" [ref=e848] [cursor=pointer]:
+                - /url: /dp/B0DGJHBX5Y?ref_=QAHzEditorial_en_IN_AugArt26_AF_SD_3&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=60614cde-c188-40fc-8170-1cf37eaafca5&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-16&pf_rd_t=&pf_rd_i=1389401031
+                - img "CE6" [ref=e850]
+            - listitem [ref=e851]:
+              - link "Z11xa" [ref=e852] [cursor=pointer]:
+                - /url: /dp/B0HG96MZ9P?ref_=QAHzEditorial_en_IN_AugArt26_AF_SD_4&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=60614cde-c188-40fc-8170-1cf37eaafca5&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-16&pf_rd_t=&pf_rd_i=1389401031
+                - img "Z11xa" [ref=e854]
+            - listitem [ref=e855]:
+              - link "A56" [ref=e856] [cursor=pointer]:
+                - /url: /dp/B0H1WY55ZL?ref_=QAHzEditorial_en_IN_AugArt26_AF_SD_5&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=60614cde-c188-40fc-8170-1cf37eaafca5&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-16&pf_rd_t=&pf_rd_i=1389401031
+                - img "A56" [ref=e858]
+            - listitem [ref=e859]:
+              - link "CE6 Lite" [ref=e860] [cursor=pointer]:
+                - /url: /dp/B0GVYXPZBS?ref_=QAHzEditorial_en_IN_AugArt26_AF_SD_6&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=60614cde-c188-40fc-8170-1cf37eaafca5&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-16&pf_rd_t=&pf_rd_i=1389401031
+                - img "CE6 Lite" [ref=e862]
+            - listitem [ref=e863]:
+              - link "Turbo" [ref=e864] [cursor=pointer]:
+                - /url: /dp/B0H297XH3K?ref_=QAHzEditorial_en_IN_AugArt26_AF_SD_7&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=60614cde-c188-40fc-8170-1cf37eaafca5&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-16&pf_rd_t=&pf_rd_i=1389401031
+                - img "Turbo" [ref=e866]
+        - list [ref=e875]:
+          - listitem [ref=e876]:
+            - generic [ref=e877]:
+              - generic:
+                - img "Shop now" [ref=e878]
+                - link "Shop now" [ref=e881] [cursor=pointer]:
+                  - /url: /b?node=223490426031&ref_=Br_MuCl_QANav11Expander_en_Tophero_Topical_Mob_fd26_Persona_1_1_1&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=6f2efb93-6a1a-45fa-97a8-1f291da7b682&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-17&pf_rd_t=&pf_rd_i=1389401031
+                  - text: Link
+        - generic [ref=e884]:
+          - list [ref=e890]:
+            - listitem [ref=e891]:
+              - link "heroalt1" [ref=e892] [cursor=pointer]:
+                - /url: /nolink?ref_=QAHzEditorial_Speed_1&pf_rd_r=1762EE05E1A342A2AF96&pf_rd_p=8242ea9f-d35c-43b9-a630-6fb4c17e0cef&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-18_CW&pf_rd_t=&pf_rd_i=1389401031
+                - img "heroalt1" [ref=e894]
+          - list [ref=e900]:
+            - listitem [ref=e901]:
+              - link "1" [ref=e902] [cursor=pointer]:
+                - /url: /dp/B0GVYXPZBS?ref_=QAHzEditorial_Speed_1&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=8242ea9f-d35c-43b9-a630-6fb4c17e0cef&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-18&pf_rd_t=&pf_rd_i=1389401031
+                - img "1" [ref=e904]
+            - listitem [ref=e905]:
+              - link "2" [ref=e906] [cursor=pointer]:
+                - /url: /dp/B0H3LB843J?ref_=QAHzEditorial_Speed_2&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=8242ea9f-d35c-43b9-a630-6fb4c17e0cef&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-18&pf_rd_t=&pf_rd_i=1389401031
+                - img "2" [ref=e908]
+            - listitem [ref=e909]:
+              - link "3" [ref=e910] [cursor=pointer]:
+                - /url: /dp/B0H3LKPC2K?ref_=QAHzEditorial_Speed_3&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=8242ea9f-d35c-43b9-a630-6fb4c17e0cef&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-18&pf_rd_t=&pf_rd_i=1389401031
+                - img "3" [ref=e912]
+            - listitem [ref=e913]:
+              - link "4" [ref=e914] [cursor=pointer]:
+                - /url: /dp/B0H7S6LT9P?ref_=QAHzEditorial_Speed_4&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=8242ea9f-d35c-43b9-a630-6fb4c17e0cef&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-18&pf_rd_t=&pf_rd_i=1389401031
+                - img "4" [ref=e916]
+            - listitem [ref=e917]:
+              - link "5" [ref=e918] [cursor=pointer]:
+                - /url: /dp/B07WYMJPVS?ref_=QAHzEditorial_Speed_5&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=8242ea9f-d35c-43b9-a630-6fb4c17e0cef&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-18&pf_rd_t=&pf_rd_i=1389401031
+                - img "5" [ref=e920]
+            - listitem [ref=e921]:
+              - link "6" [ref=e922] [cursor=pointer]:
+                - /url: /dp/B0GN24SV22?ref_=QAHzEditorial_Speed_6&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=8242ea9f-d35c-43b9-a630-6fb4c17e0cef&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-18&pf_rd_t=&pf_rd_i=1389401031
+                - img "6" [ref=e924]
+            - listitem [ref=e925]:
+              - link "7" [ref=e926] [cursor=pointer]:
+                - /url: /dp/B0H5BRHZBX?ref_=QAHzEditorial_Speed_7&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=8242ea9f-d35c-43b9-a630-6fb4c17e0cef&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-18&pf_rd_t=&pf_rd_i=1389401031
+                - img "7" [ref=e928]
+            - listitem [ref=e929]:
+              - link "8" [ref=e930] [cursor=pointer]:
+                - /url: /dp/B0DSKL9MQ8?ref_=QAHzEditorial_Speed_8&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=8242ea9f-d35c-43b9-a630-6fb4c17e0cef&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-18&pf_rd_t=&pf_rd_i=1389401031
+                - img "8" [ref=e932]
+            - listitem [ref=e933]:
+              - link "9" [ref=e934] [cursor=pointer]:
+                - /url: /dp/B0HG96MZ9P?ref_=QAHzEditorial_Speed_9&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=8242ea9f-d35c-43b9-a630-6fb4c17e0cef&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-18&pf_rd_t=&pf_rd_i=1389401031
+                - img "9" [ref=e936]
+        - generic [ref=e939]:
+          - list [ref=e945]:
+            - listitem [ref=e946]:
+              - link "heroalt1" [ref=e947] [cursor=pointer]:
+                - /url: /b?node=26850977031&ref_=QAHzEditorial_en_IN_1&pf_rd_r=212BAB61E1A84D49B0D1&pf_rd_p=246b1d39-c364-460f-b84f-64b79195914d&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-21_CW&pf_rd_t=&pf_rd_i=1389401031
+                - img "heroalt1" [ref=e949]
+          - list [ref=e955]:
+            - listitem [ref=e956]:
+              - link "1" [ref=e957] [cursor=pointer]:
+                - /url: /dp/B0DSKL9MQ8?ref_=QAHzEditorial_en_IN_1&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=246b1d39-c364-460f-b84f-64b79195914d&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-21&pf_rd_t=&pf_rd_i=1389401031
+                - img "1" [ref=e959]
+            - listitem [ref=e960]:
+              - link "2" [ref=e961] [cursor=pointer]:
+                - /url: /dp/B0GN24SV22?ref_=QAHzEditorial_en_IN_2&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=246b1d39-c364-460f-b84f-64b79195914d&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-21&pf_rd_t=&pf_rd_i=1389401031
+                - img "2" [ref=e963]
+            - listitem [ref=e964]:
+              - link "3" [ref=e965] [cursor=pointer]:
+                - /url: /dp/B0FN7QTRPY?ref_=QAHzEditorial_en_IN_3&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=246b1d39-c364-460f-b84f-64b79195914d&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-21&pf_rd_t=&pf_rd_i=1389401031
+                - img "3" [ref=e967]
+            - listitem [ref=e968]:
+              - link "4" [ref=e969] [cursor=pointer]:
+                - /url: /dp/B0GL867NV5?ref_=QAHzEditorial_en_IN_4&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=246b1d39-c364-460f-b84f-64b79195914d&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-21&pf_rd_t=&pf_rd_i=1389401031
+                - img "4" [ref=e971]
+            - listitem [ref=e972]:
+              - link "5" [ref=e973] [cursor=pointer]:
+                - /url: /dp/B0H1WY55ZL?ref_=QAHzEditorial_en_IN_5&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=246b1d39-c364-460f-b84f-64b79195914d&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-21&pf_rd_t=&pf_rd_i=1389401031
+                - img "5" [ref=e975]
+            - listitem [ref=e976]:
+              - link "6" [ref=e977] [cursor=pointer]:
+                - /url: /dp/B0H4LBXQDC?ref_=QAHzEditorial_en_IN_6&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=246b1d39-c364-460f-b84f-64b79195914d&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-21&pf_rd_t=&pf_rd_i=1389401031
+                - img "6" [ref=e979]
+            - listitem [ref=e980]:
+              - link "7" [ref=e981] [cursor=pointer]:
+                - /url: /dp/B0H5BRHZBX?ref_=QAHzEditorial_en_IN_7&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=246b1d39-c364-460f-b84f-64b79195914d&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-21&pf_rd_t=&pf_rd_i=1389401031
+                - img "7" [ref=e983]
+            - listitem [ref=e984]:
+              - link "8" [ref=e985] [cursor=pointer]:
+                - /url: /dp/B0FDL5T1PF?ref_=QAHzEditorial_en_IN_8&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=246b1d39-c364-460f-b84f-64b79195914d&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-21&pf_rd_t=&pf_rd_i=1389401031
+                - img "8" [ref=e987]
+        - generic [ref=e990]:
+          - list [ref=e996]:
+            - listitem [ref=e997]:
+              - link "heroalt1" [ref=e998] [cursor=pointer]:
+                - /url: /b?node=78382731031&ref_=QAHzEditorial_en_IN_1&pf_rd_r=0C8A1E8E3ABE4FB986CC&pf_rd_p=404e2831-a87c-4e57-a6ad-385bd2638914&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-22_CW&pf_rd_t=&pf_rd_i=1389401031
+                - img "heroalt1" [ref=e1000]
+          - list [ref=e1006]:
+            - listitem [ref=e1007]:
+              - link "1" [ref=e1008] [cursor=pointer]:
+                - /url: /dp/B0GWLHVJRH?ref_=QAHzEditorial_en_IN_1&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=404e2831-a87c-4e57-a6ad-385bd2638914&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-22&pf_rd_t=&pf_rd_i=1389401031
+                - img "1" [ref=e1010]
+            - listitem [ref=e1011]:
+              - link "2" [ref=e1012] [cursor=pointer]:
+                - /url: /dp/B0GRBBPBGQ?ref_=QAHzEditorial_en_IN_2&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=404e2831-a87c-4e57-a6ad-385bd2638914&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-22&pf_rd_t=&pf_rd_i=1389401031
+                - img "2" [ref=e1014]
+            - listitem [ref=e1015]:
+              - link "3" [ref=e1016] [cursor=pointer]:
+                - /url: /dp/B0GVYXPZBS?ref_=QAHzEditorial_en_IN_3&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=404e2831-a87c-4e57-a6ad-385bd2638914&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-22&pf_rd_t=&pf_rd_i=1389401031
+                - img "3" [ref=e1018]
+            - listitem [ref=e1019]:
+              - link "4" [ref=e1020] [cursor=pointer]:
+                - /url: /dp/B0HJW1DW98?ref_=QAHzEditorial_en_IN_4&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=404e2831-a87c-4e57-a6ad-385bd2638914&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-22&pf_rd_t=&pf_rd_i=1389401031
+                - img "4" [ref=e1022]
+            - listitem [ref=e1023]:
+              - link "5" [ref=e1024] [cursor=pointer]:
+                - /url: /dp/B0HHRM5FW8?ref_=QAHzEditorial_en_IN_5&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=404e2831-a87c-4e57-a6ad-385bd2638914&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-22&pf_rd_t=&pf_rd_i=1389401031
+                - img "5" [ref=e1026]
+            - listitem [ref=e1027]:
+              - link "6" [ref=e1028] [cursor=pointer]:
+                - /url: /dp/B0FTRN7L8Q?th=1&ref_=QAHzEditorial_en_IN_6&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=404e2831-a87c-4e57-a6ad-385bd2638914&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-22&pf_rd_t=&pf_rd_i=1389401031
+                - img "6" [ref=e1030]
+            - listitem [ref=e1031]:
+              - link "7" [ref=e1032] [cursor=pointer]:
+                - /url: /dp/B0FZSWZZW2?ref_=QAHzEditorial_en_IN_7&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=404e2831-a87c-4e57-a6ad-385bd2638914&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-22&pf_rd_t=&pf_rd_i=1389401031
+                - img "7" [ref=e1034]
+            - listitem [ref=e1035]:
+              - link "8" [ref=e1036] [cursor=pointer]:
+                - /url: /dp/B0HBPNBC7B?ref_=QAHzEditorial_en_IN_8&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=404e2831-a87c-4e57-a6ad-385bd2638914&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-22&pf_rd_t=&pf_rd_i=1389401031
+                - img "8" [ref=e1038]
+        - generic [ref=e1041]:
+          - list [ref=e1047]:
+            - listitem [ref=e1048]:
+              - link "heroalt1" [ref=e1049] [cursor=pointer]:
+                - /url: /l/94070968031?ref_=QAHzEditorial_en_IN_1&pf_rd_r=2758FFC641484BD8875D&pf_rd_p=1f82adc9-d9ba-4bd8-ab9b-24267f88267f&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-23_CW&pf_rd_t=&pf_rd_i=1389401031
+                - img "heroalt1" [ref=e1051]
+          - list [ref=e1057]:
+            - listitem [ref=e1058]:
+              - link "1" [ref=e1059] [cursor=pointer]:
+                - /url: /dp/B07WYMJPVS?ref_=QAHzEditorial_en_IN_1&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=1f82adc9-d9ba-4bd8-ab9b-24267f88267f&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-23&pf_rd_t=&pf_rd_i=1389401031
+                - img "1" [ref=e1061]
+            - listitem [ref=e1062]:
+              - link "2" [ref=e1063] [cursor=pointer]:
+                - /url: /dp/B0HG96MZ9P?ref_=QAHzEditorial_en_IN_2&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=1f82adc9-d9ba-4bd8-ab9b-24267f88267f&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-23&pf_rd_t=&pf_rd_i=1389401031
+                - img "2" [ref=e1065]
+            - listitem [ref=e1066]:
+              - link "3" [ref=e1067] [cursor=pointer]:
+                - /url: /dp/B0HCNHGQDD?ref_=QAHzEditorial_en_IN_3&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=1f82adc9-d9ba-4bd8-ab9b-24267f88267f&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-23&pf_rd_t=&pf_rd_i=1389401031
+                - img "3" [ref=e1069]
+            - listitem [ref=e1070]:
+              - link "4" [ref=e1071] [cursor=pointer]:
+                - /url: /dp/B0HCB7R5VJ?ref_=QAHzEditorial_en_IN_4&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=1f82adc9-d9ba-4bd8-ab9b-24267f88267f&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-23&pf_rd_t=&pf_rd_i=1389401031
+                - img "4" [ref=e1073]
+            - listitem [ref=e1074]:
+              - link "5" [ref=e1075] [cursor=pointer]:
+                - /url: /dp/B0HGM9VH47?ref_=QAHzEditorial_en_IN_5&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=1f82adc9-d9ba-4bd8-ab9b-24267f88267f&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-23&pf_rd_t=&pf_rd_i=1389401031
+                - img "5" [ref=e1077]
+        - generic [ref=e1080]:
+          - list [ref=e1086]:
+            - listitem [ref=e1087]:
+              - link "heroalt1" [ref=e1088] [cursor=pointer]:
+                - /url: /b?node=78420299031&ref_=QAHzEditorial_en_IN_1&pf_rd_r=0166BD82F748457A9867&pf_rd_p=8f73960b-95d4-447f-ba73-d4904e9efc01&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-24_CW&pf_rd_t=&pf_rd_i=1389401031
+                - img "heroalt1" [ref=e1090]
+          - list [ref=e1096]:
+            - listitem [ref=e1097]:
+              - link "1" [ref=e1098] [cursor=pointer]:
+                - /url: /dp/B0H293SFTR?ref_=QAHzEditorial_en_IN_1&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=8f73960b-95d4-447f-ba73-d4904e9efc01&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-24&pf_rd_t=&pf_rd_i=1389401031
+                - img "1" [ref=e1100]
+            - listitem [ref=e1101]:
+              - link "2" [ref=e1102] [cursor=pointer]:
+                - /url: /dp/B0G2B1S4YL?ref_=QAHzEditorial_en_IN_2&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=8f73960b-95d4-447f-ba73-d4904e9efc01&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-24&pf_rd_t=&pf_rd_i=1389401031
+                - img "2" [ref=e1104]
+            - listitem [ref=e1105]:
+              - link "3" [ref=e1106] [cursor=pointer]:
+                - /url: /dp/B0GS5N7M97?ref_=QAHzEditorial_en_IN_3&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=8f73960b-95d4-447f-ba73-d4904e9efc01&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-24&pf_rd_t=&pf_rd_i=1389401031
+                - img "3" [ref=e1108]
+            - listitem [ref=e1109]:
+              - link "4" [ref=e1110] [cursor=pointer]:
+                - /url: /dp/B0HBWH5MK7?ref_=QAHzEditorial_en_IN_4&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=8f73960b-95d4-447f-ba73-d4904e9efc01&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-24&pf_rd_t=&pf_rd_i=1389401031
+                - img "4" [ref=e1112]
+            - listitem [ref=e1113]:
+              - link "5" [ref=e1114] [cursor=pointer]:
+                - /url: /dp/B0H8CF8GRH?ref_=QAHzEditorial_en_IN_5&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=8f73960b-95d4-447f-ba73-d4904e9efc01&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-24&pf_rd_t=&pf_rd_i=1389401031
+                - img "5" [ref=e1116]
+            - listitem [ref=e1117]:
+              - link "6" [ref=e1118] [cursor=pointer]:
+                - /url: /dp/B0HGM8ZFDV?ref_=QAHzEditorial_en_IN_6&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=8f73960b-95d4-447f-ba73-d4904e9efc01&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-24&pf_rd_t=&pf_rd_i=1389401031
+                - img "6" [ref=e1120]
+        - generic [ref=e1123]:
+          - list [ref=e1129]:
+            - listitem [ref=e1130]:
+              - link "heroalt1" [ref=e1131] [cursor=pointer]:
+                - /url: /b?node=78420299031&ref_=QAHzEditorial_en_IN_1&pf_rd_r=252AA3092FE94FF88B63&pf_rd_p=eec9a212-1d04-487a-964d-3f86bd24f109&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-25_CW&pf_rd_t=&pf_rd_i=1389401031
+                - img "heroalt1" [ref=e1133]
+          - list [ref=e1139]:
+            - listitem [ref=e1140]:
+              - link "1" [ref=e1141] [cursor=pointer]:
+                - /url: /dp/B0H33KMYHX?ref_=QAHzEditorial_en_IN_1&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=eec9a212-1d04-487a-964d-3f86bd24f109&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-25&pf_rd_t=&pf_rd_i=1389401031
+                - img "1" [ref=e1143]
+            - listitem [ref=e1144]:
+              - link "2" [ref=e1145] [cursor=pointer]:
+                - /url: /dp/B0H1BMBX9R?ref_=QAHzEditorial_en_IN_2&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=eec9a212-1d04-487a-964d-3f86bd24f109&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-25&pf_rd_t=&pf_rd_i=1389401031
+                - img "2" [ref=e1147]
+            - listitem [ref=e1148]:
+              - link "3" [ref=e1149] [cursor=pointer]:
+                - /url: /dp/B0GMG65KB8?ref_=QAHzEditorial_en_IN_3&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=eec9a212-1d04-487a-964d-3f86bd24f109&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-25&pf_rd_t=&pf_rd_i=1389401031
+                - img "3" [ref=e1151]
+            - listitem [ref=e1152]:
+              - link "4" [ref=e1153] [cursor=pointer]:
+                - /url: /dp/B0GZGJ2XNQ?ref_=QAHzEditorial_en_IN_4&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=eec9a212-1d04-487a-964d-3f86bd24f109&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-25&pf_rd_t=&pf_rd_i=1389401031
+                - img "4" [ref=e1155]
+        - generic [ref=e1158]:
+          - generic [ref=e1160]:
+            - heading "Explore Other Brands" [level=2] [ref=e1162]
+            - list [ref=e1166]:
+              - listitem [aria-hidden] [ref=e1167]
+              - listitem [ref=e1170]:
+                - link "heroalt1" [ref=e1171] [cursor=pointer]:
+                  - /url: /dp/B0H99JPWFV?ref_=QAHzEditorial_en_IN_1&pf_rd_r=21BA27D6A6D14C8BA816&pf_rd_p=d6645fe4-692b-4b6d-be8b-27dee6b91469&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-26_CW&pf_rd_t=&pf_rd_i=1389401031
+                  - img "heroalt1" [ref=e1173]
+              - listitem [ref=e1174]:
+                - link "heroalt2" [ref=e1175] [cursor=pointer]:
+                  - /url: /dp/B0GL1WGHJX?ref_=QAHzEditorial_en_IN_2&pf_rd_r=21BA27D6A6D14C8BA816&pf_rd_p=d6645fe4-692b-4b6d-be8b-27dee6b91469&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-26_CW&pf_rd_t=&pf_rd_i=1389401031
+                  - img "heroalt2" [ref=e1177]
+              - listitem [ref=e1178]:
+                - link "heroalt3" [ref=e1179] [cursor=pointer]:
+                  - /url: /dp/B0GW5XR5J6?ref_=QAHzEditorial_en_IN_3&pf_rd_r=21BA27D6A6D14C8BA816&pf_rd_p=d6645fe4-692b-4b6d-be8b-27dee6b91469&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-26_CW&pf_rd_t=&pf_rd_i=1389401031
+                  - img "heroalt3" [ref=e1181]
+              - listitem [ref=e1182]:
+                - link "heroalt4" [ref=e1183] [cursor=pointer]:
+                  - /url: /dp/B0H5BVP5QH?ref_=QAHzEditorial_en_IN_4&pf_rd_r=21BA27D6A6D14C8BA816&pf_rd_p=d6645fe4-692b-4b6d-be8b-27dee6b91469&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-26_CW&pf_rd_t=&pf_rd_i=1389401031
+                  - img "heroalt4" [ref=e1185]
+              - listitem [ref=e1186]:
+                - link "heroalt5" [ref=e1187] [cursor=pointer]:
+                  - /url: /dp/B0F46FY98J?ref_=QAHzEditorial_en_IN_5&pf_rd_r=21BA27D6A6D14C8BA816&pf_rd_p=d6645fe4-692b-4b6d-be8b-27dee6b91469&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-26_CW&pf_rd_t=&pf_rd_i=1389401031
+                  - img "heroalt5" [ref=e1189]
+              - listitem [aria-hidden] [ref=e1190]
+            - group "Select a slide" [ref=e1193]:
+              - button "Go to slide 1 of 5" [ref=e1194] [cursor=pointer]
+              - button "Go to slide 2 of 5" [ref=e1195] [cursor=pointer]
+              - button "Go to slide 3 of 5" [ref=e1196] [cursor=pointer]
+              - button "Go to slide 4 of 5" [ref=e1197] [cursor=pointer]
+              - button "Go to slide 5 of 5" [ref=e1198] [cursor=pointer]
+          - list [ref=e1204]:
+            - listitem [ref=e1205]:
+              - link "Lava Bold N2" [ref=e1206] [cursor=pointer]:
+                - /url: /dp/B0H8N8CP5L?ref_=QAHzEditorial_en_IN_1&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=d6645fe4-692b-4b6d-be8b-27dee6b91469&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-26&pf_rd_t=&pf_rd_i=1389401031
+                - img "Lava Bold N2" [ref=e1208]
+            - listitem [ref=e1209]:
+              - link "vivo V70 5G" [ref=e1210] [cursor=pointer]:
+                - /url: /dp/B0H5C6QSJB?ref_=QAHzEditorial_en_IN_2&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=d6645fe4-692b-4b6d-be8b-27dee6b91469&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-26&pf_rd_t=&pf_rd_i=1389401031
+                - img "vivo V70 5G" [ref=e1212]
+            - listitem [ref=e1213]:
+              - link "OPPO Reno15c 5G" [ref=e1214] [cursor=pointer]:
+                - /url: /dp/B0HDPDGKJ4?ref_=QAHzEditorial_en_IN_3&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=d6645fe4-692b-4b6d-be8b-27dee6b91469&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-26&pf_rd_t=&pf_rd_i=1389401031
+                - img "OPPO Reno15c 5G" [ref=e1216]
+            - listitem [ref=e1217]:
+              - link "Moto" [ref=e1218] [cursor=pointer]:
+                - /url: /dp/B0H8Y7LK4J?ref_=QAHzEditorial_en_IN_4&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=d6645fe4-692b-4b6d-be8b-27dee6b91469&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-26&pf_rd_t=&pf_rd_i=1389401031
+                - img "Moto" [ref=e1220]
+            - listitem [ref=e1221]:
+              - link "Alcatel" [ref=e1222] [cursor=pointer]:
+                - /url: /dp/B0HJ2PR3FN?ref_=QAHzEditorial_en_IN_5&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=d6645fe4-692b-4b6d-be8b-27dee6b91469&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-26&pf_rd_t=&pf_rd_i=1389401031
+                - img "Alcatel" [ref=e1224]
+            - listitem [ref=e1225]:
+              - link "Lava Bold N2 5G" [ref=e1226] [cursor=pointer]:
+                - /url: /dp/B0H41KVMQV?ref_=QAHzEditorial_en_IN_6&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=d6645fe4-692b-4b6d-be8b-27dee6b91469&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-26&pf_rd_t=&pf_rd_i=1389401031
+                - img "Lava Bold N2 5G" [ref=e1228]
+        - list [ref=e1237]:
+          - listitem [ref=e1238]:
+            - generic [ref=e1239]:
+              - generic:
+                - img "Shop now" [ref=e1240]
+                - generic [ref=e1241]:
+                  - link "Shop now" [ref=e1243] [cursor=pointer]:
+                    - /url: /l/1389402031?ref_=Br_MuCl_QAHzEditorial_en_IN_test_multiAk_1_1_1&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=6f794772-2472-4cf3-bccb-c29f5d38e236&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-28&pf_rd_t=&pf_rd_i=1389401031
+                    - text: Link
+                  - link "Shop now" [ref=e1245] [cursor=pointer]:
+                    - /url: /l/1389402031?ref_=Br_MuCl_QAHzEditorial_en_IN_test_multiAk_1_1_2&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=6f794772-2472-4cf3-bccb-c29f5d38e236&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-28&pf_rd_t=&pf_rd_i=1389401031
+                    - text: Link
+                  - link "Shop now" [ref=e1247] [cursor=pointer]:
+                    - /url: /dp/B0H3Q5DPP9?ref_=Br_MuCl_QAHzEditorial_en_IN_test_multiAk_1_2_1&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=6f794772-2472-4cf3-bccb-c29f5d38e236&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-28&pf_rd_t=&pf_rd_i=1389401031
+                    - text: Link
+                  - link "Shop now" [ref=e1249] [cursor=pointer]:
+                    - /url: /dp/B0GDQ28DY5?ref_=Br_MuCl_QAHzEditorial_en_IN_test_multiAk_1_2_2&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=6f794772-2472-4cf3-bccb-c29f5d38e236&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-28&pf_rd_t=&pf_rd_i=1389401031
+                    - text: Link
+                  - link "Shop now" [ref=e1251] [cursor=pointer]:
+                    - /url: /dp/B0FDGVNSLH?ref_=Br_MuCl_QAHzEditorial_en_IN_test_multiAk_1_3_1&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=6f794772-2472-4cf3-bccb-c29f5d38e236&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-28&pf_rd_t=&pf_rd_i=1389401031
+                    - text: Link
+                  - link "Shop now" [ref=e1253] [cursor=pointer]:
+                    - /url: /dp/B0H5MMJB4H?ref_=Br_MuCl_QAHzEditorial_en_IN_test_multiAk_1_3_2&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=6f794772-2472-4cf3-bccb-c29f5d38e236&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-28&pf_rd_t=&pf_rd_i=1389401031
+                    - text: Link
+                  - link "Shop now" [ref=e1255] [cursor=pointer]:
+                    - /url: /dp/B0H751H8RS?ref_=Br_MuCl_QAHzEditorial_en_IN_test_multiAk_1_4_1&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=6f794772-2472-4cf3-bccb-c29f5d38e236&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-28&pf_rd_t=&pf_rd_i=1389401031
+                    - text: Link
+                  - link "Shop now" [ref=e1257] [cursor=pointer]:
+                    - /url: /dp/B0FS7VFR79?ref_=Br_MuCl_QAHzEditorial_en_IN_test_multiAk_1_4_2&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=6f794772-2472-4cf3-bccb-c29f5d38e236&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-28&pf_rd_t=&pf_rd_i=1389401031
+                    - text: Link
+                  - link "Shop now" [ref=e1259] [cursor=pointer]:
+                    - /url: /dp/B0FB99VQCT?ref_=Br_MuCl_QAHzEditorial_en_IN_test_multiAk_1_5_1&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=6f794772-2472-4cf3-bccb-c29f5d38e236&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-28&pf_rd_t=&pf_rd_i=1389401031
+                    - text: Link
+                  - link "Shop now" [ref=e1261] [cursor=pointer]:
+                    - /url: /dp/B0FVB22GHK?ref_=Br_MuCl_QAHzEditorial_en_IN_test_multiAk_1_5_2&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&pf_rd_p=6f794772-2472-4cf3-bccb-c29f5d38e236&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-28&pf_rd_t=&pf_rd_i=1389401031
+                    - text: Link
+        - link [ref=e1271] [cursor=pointer]:
+          - /url: /events/greatindianfestival?_encoding=UTF8&ref_=cct_cg_Jn25RITE_1a1&pf_rd_p=1f090302-100e-48f3-954f-cbce5a8cdca3&pf_rd_r=BD6AGZWQP3CEQ78T1J7S
+          - img "Reverse Ingress" [ref=e1272]
+        - generic [ref=e1275]:
+          - generic [ref=e1276]: 1-12 of over 80,000 results for Mobiles & Accessories
+          - generic [ref=e1279]:
+            - generic [ref=e1283]:
+              - link [aria-hidden] [ref=e1286] [cursor=pointer]:
+                - /url: /Nothing-Phone-White-8GB-256GB/dp/B0H8T83BSL/ref=lp_1389401031_1_1_mod_primary_new?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+              - generic [ref=e1289]:
+                - group "colours available" [ref=e1291]:
+                  - list [ref=e1292]:
+                    - generic [ref=e1293]:
+                      - listitem:
+                        - link "White":
+                          - /url: /Nothing-Phone-White-8GB-256GB/dp/B0H8T83BSL/ref=cs_sr_dp_1?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+                          - generic [ref=e1294] [cursor=pointer]
+                    - generic [ref=e1296]:
+                      - listitem:
+                        - link "Black":
+                          - /url: /Nothing-Phone-White-8GB-256GB/dp/B0H8XS4ST9/ref=cs_sr_dp_2?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+                          - generic [ref=e1297] [cursor=pointer]
+                    - generic [ref=e1299]:
+                      - listitem:
+                        - link "Blue":
+                          - /url: /Nothing-Phone-White-8GB-256GB/dp/B0H8XM6BQT/ref=cs_sr_dp_3?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+                          - generic [ref=e1300] [cursor=pointer]
+                - link [ref=e1303] [cursor=pointer]:
+                  - /url: /Nothing-Phone-White-8GB-256GB/dp/B0H8T83BSL/ref=lp_1389401031_1_1_mod_primary_new?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+                  - heading "Nothing Phone (4b), White (8GB, 256GB)" [level=2] [ref=e1304]
+                - generic [ref=e1305]:
+                  - generic [ref=e1306]:
+                    - text: "3.7"
+                    - button "3.7 out of 5 stars, rating details" [ref=e1308] [cursor=pointer]:
+                      - generic [ref=e1310]: 3.7 out of 5 stars
+                    - link "36 ratings" [ref=e1312] [cursor=pointer]:
+                      - /url: /Nothing-Phone-White-8GB-256GB/dp/B0H8T83BSL/ref=lp_1389401031_1_1_mod_primary_new?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D#customerReviews
+                      - text: (36)
+                  - generic [ref=e1313]: 500+ bought in past month
+                - generic [ref=e1314]:
+                  - generic [ref=e1316]:
+                    - generic [ref=e1317]: Price, product page
+                    - 'link "₹34,390 M.R.P: ₹59,999 M.R.P: ₹59,999" [ref=e1318] [cursor=pointer]':
+                      - /url: /Nothing-Phone-White-8GB-256GB/dp/B0H8T83BSL/ref=lp_1389401031_1_1_mod_primary_new?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+                      - generic [ref=e1319]:
+                        - generic [ref=e1320]: ₹34,390
+                        - generic [aria-hidden] [ref=e1321]: ₹34,390
+                      - generic [ref=e1322]: "M.R.P: ₹59,999"
+                      - generic [ref=e1323]:
+                        - text: "M.R.P:"
+                        - generic [ref=e1324]:
+                          - generic [ref=e1325]: ₹59,999
+                          - text: ₹59,999
+                    - text: (43% off)
+                  - generic [ref=e1326]: Up to 5% back with Amazon Pay ICICI card
+                - generic [ref=e1333]:
+                  - generic [ref=e1334]: FREE delivery Thu, 29 Oct
+                  - generic [ref=e1336]: Or fastest delivery Wed, 21 Oct
+                - generic [ref=e1339]:
+                  - text: More Buying Choices₹34,389
+                  - link "(17 new offers)" [ref=e1340] [cursor=pointer]:
+                    - /url: /gp/offer-listing/B0H8T83BSL/ref=lp_1389401031_1_1_olp?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S
+                - generic [ref=e1342]:
+                  - separator [aria-hidden] [ref=e1343]
+                  - link "Get it faster" [ref=e1344] [cursor=pointer]:
+                    - /url: /Nothing-Phone-White-8GB-256GB/dp/B0H8T83BSL/ref=lp_1389401031_1_1_mod_new?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&psc=1&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+                  - link:
+                    - /url: /Nothing-Phone-White-8GB-256GB/dp/B0H8T83BSL/ref=lp_1389401031_1_1_mod_new?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&psc=1&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+                  - generic [ref=e1345]:
+                    - link:
+                      - /url: /Nothing-Phone-White-8GB-256GB/dp/B0H8T83BSL/ref=lp_1389401031_1_1_mod_new?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&psc=1&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+                    - generic [ref=e1346]:
+                      - link "Price, product page":
+                        - /url: /Nothing-Phone-White-8GB-256GB/dp/B0H8T83BSL/ref=lp_1389401031_1_1_mod_new?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&psc=1&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+                      - 'link "₹34,699 M.R.P: ₹59,999 M.R.P: ₹59,999" [ref=e1348] [cursor=pointer]':
+                        - /url: /Nothing-Phone-White-8GB-256GB/dp/B0H8T83BSL/ref=lp_1389401031_1_1_mod_new?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&psc=1&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+                        - generic [ref=e1349]:
+                          - generic [ref=e1350]: ₹34,699
+                          - generic [aria-hidden] [ref=e1351]: ₹34,699
+                        - generic [ref=e1352]: "M.R.P: ₹59,999"
+                        - generic [ref=e1353]:
+                          - text: "M.R.P:"
+                          - generic [ref=e1354]:
+                            - generic [ref=e1355]: ₹59,999
+                            - text: ₹59,999
+                      - text: (42% off)
+                  - generic [ref=e1356]: Up to 5% back with Amazon Pay ICICI card
+                  - generic [ref=e1362]:
+                    - generic [ref=e1363]: FREE delivery Wed, 21 Oct
+                    - generic [ref=e1365]: Or fastest delivery Sun, 18 Oct
+            - generic [ref=e1370]:
+              - group "Best sellerin Item Finders" [ref=e1375]:
+                - generic "Best seller" [ref=e1377]
+              - link [aria-hidden] [ref=e1380] [cursor=pointer]:
+                - /url: /JioTag-2nd-Generation-Grey-Compatible/dp/B0H5VWCNWN/ref=lp_1389401031_1_2?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+              - generic [ref=e1383]:
+                - link [ref=e1385] [cursor=pointer]:
+                  - /url: /JioTag-2nd-Generation-Grey-Compatible/dp/B0H5VWCNWN/ref=lp_1389401031_1_2?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+                  - heading "JioTag (2nd Generation) (Grey) - Android or iOS Compatible IP64 Rated Worldwide Item Finder for Keys, Wallets, Luggage, Gadgets and More |1+1 Year Battery | No SIM Needed" [level=2] [ref=e1386]
+                - generic [ref=e1387]:
+                  - generic [ref=e1388]:
+                    - text: "3.8"
+                    - button "3.8 out of 5 stars, rating details" [ref=e1390] [cursor=pointer]:
+                      - generic [ref=e1392]: 3.8 out of 5 stars
+                    - link "399 ratings" [ref=e1394] [cursor=pointer]:
+                      - /url: /JioTag-2nd-Generation-Grey-Compatible/dp/B0H5VWCNWN/ref=lp_1389401031_1_2?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D#customerReviews
+                      - text: (399)
+                  - generic [ref=e1395]: 5K+ bought in past month
+                - generic [ref=e1396]:
+                  - link "Great Indian Festival" [ref=e1398] [cursor=pointer]:
+                    - /url: /deals
+                  - generic [ref=e1404]:
+                    - generic [ref=e1405]: Price, product page
+                    - 'link "₹999 M.R.P: ₹2,999 M.R.P: ₹2,999" [ref=e1406] [cursor=pointer]':
+                      - /url: /JioTag-2nd-Generation-Grey-Compatible/dp/B0H5VWCNWN/ref=lp_1389401031_1_2?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+                      - generic [ref=e1407]:
+                        - generic [ref=e1408]: ₹999
+                        - generic [aria-hidden] [ref=e1409]: ₹999
+                      - generic [ref=e1410]: "M.R.P: ₹2,999"
+                      - generic [ref=e1411]:
+                        - text: "M.R.P:"
+                        - generic [ref=e1412]:
+                          - generic [ref=e1413]: ₹2,999
+                          - text: ₹2,999
+                    - text: (67% off)
+                  - generic [ref=e1414]: Up to 5% back with Amazon Pay ICICI card
+                - generic [ref=e1421]:
+                  - generic [ref=e1422]: FREE delivery Sun, 18 Oct
+                  - generic [ref=e1424]: Or fastest delivery Tomorrow 6 am - 10 am
+            - generic [ref=e1429]:
+              - link [aria-hidden] [ref=e1432] [cursor=pointer]:
+                - /url: /Nothing-Snapdragon-Octa-Core-Processor-6-77-inch/dp/B0H8PRXFLY/ref=lp_1389401031_1_3_mod_primary_new?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+              - generic [ref=e1435]:
+                - group "colours available" [ref=e1437]:
+                  - list [ref=e1438]:
+                    - generic [ref=e1439]:
+                      - listitem:
+                        - link "White":
+                          - /url: /Nothing-Snapdragon-Octa-Core-Processor-6-77-inch/dp/B0H8PRXFLY/ref=cs_sr_dp_1?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+                          - generic [ref=e1440] [cursor=pointer]
+                    - generic [ref=e1442]:
+                      - listitem:
+                        - link "Black":
+                          - /url: /Nothing-Snapdragon-Octa-Core-Processor-6-77-inch/dp/B0H8XQ49B8/ref=cs_sr_dp_2?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+                          - generic [ref=e1443] [cursor=pointer]
+                    - generic [ref=e1445]:
+                      - listitem:
+                        - link "Blue":
+                          - /url: /Nothing-Snapdragon-Octa-Core-Processor-6-77-inch/dp/B0H8Y2FFDN/ref=cs_sr_dp_3?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+                          - generic [ref=e1446] [cursor=pointer]
+                - link [ref=e1449] [cursor=pointer]:
+                  - /url: /Nothing-Snapdragon-Octa-Core-Processor-6-77-inch/dp/B0H8PRXFLY/ref=lp_1389401031_1_3_mod_primary_new?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+                  - heading "Nothing Phone (4b) 5G (White, 8GB RAM, 128GB Storage) | Snapdragon 6 Gen 4 Octa-Core Processor | 50MP + 8MP Dual Rear Camera | 16MP Front Camera | 6.77-inch AMOLED Display | 6000mAh Battery |" [level=2] [ref=e1450]
+                - generic [ref=e1451]:
+                  - generic [ref=e1452]:
+                    - text: "3.9"
+                    - button "3.9 out of 5 stars, rating details" [ref=e1454] [cursor=pointer]:
+                      - generic [ref=e1456]: 3.9 out of 5 stars
+                    - link "60 ratings" [ref=e1458] [cursor=pointer]:
+                      - /url: /Nothing-Snapdragon-Octa-Core-Processor-6-77-inch/dp/B0H8PRXFLY/ref=lp_1389401031_1_3_mod_primary_new?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D#customerReviews
+                      - text: (60)
+                  - generic [ref=e1459]: 1K+ bought in past month
+                - generic [ref=e1460]:
+                  - generic [ref=e1462]:
+                    - generic [ref=e1463]: Price, product page
+                    - 'link "₹30,500 M.R.P: ₹54,999 M.R.P: ₹54,999" [ref=e1464] [cursor=pointer]':
+                      - /url: /Nothing-Snapdragon-Octa-Core-Processor-6-77-inch/dp/B0H8PRXFLY/ref=lp_1389401031_1_3_mod_primary_new?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+                      - generic [ref=e1465]:
+                        - generic [ref=e1466]: ₹30,500
+                        - generic [aria-hidden] [ref=e1467]: ₹30,500
+                      - generic [ref=e1468]: "M.R.P: ₹54,999"
+                      - generic [ref=e1469]:
+                        - text: "M.R.P:"
+                        - generic [ref=e1470]:
+                          - generic [ref=e1471]: ₹54,999
+                          - text: ₹54,999
+                    - text: (45% off)
+                  - generic [ref=e1472]: Up to 5% back with Amazon Pay ICICI card
+                - generic [ref=e1479]:
+                  - generic [ref=e1480]: FREE delivery Mon, 26 Oct
+                  - generic [ref=e1482]: Or fastest delivery Tue, 20 Oct
+                - generic [ref=e1485]:
+                  - separator [aria-hidden] [ref=e1486]
+                  - link "Get it faster" [ref=e1487] [cursor=pointer]:
+                    - /url: /Nothing-Snapdragon-Octa-Core-Processor-6-77-inch/dp/B0H8PRXFLY/ref=lp_1389401031_1_3_mod_new?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&psc=1&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+                  - link:
+                    - /url: /Nothing-Snapdragon-Octa-Core-Processor-6-77-inch/dp/B0H8PRXFLY/ref=lp_1389401031_1_3_mod_new?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&psc=1&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+                  - generic [ref=e1488]:
+                    - link:
+                      - /url: /Nothing-Snapdragon-Octa-Core-Processor-6-77-inch/dp/B0H8PRXFLY/ref=lp_1389401031_1_3_mod_new?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&psc=1&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+                    - generic [ref=e1489]:
+                      - link "Price, product page":
+                        - /url: /Nothing-Snapdragon-Octa-Core-Processor-6-77-inch/dp/B0H8PRXFLY/ref=lp_1389401031_1_3_mod_new?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&psc=1&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+                      - 'link "₹31,190 M.R.P: ₹54,999 M.R.P: ₹54,999" [ref=e1491] [cursor=pointer]':
+                        - /url: /Nothing-Snapdragon-Octa-Core-Processor-6-77-inch/dp/B0H8PRXFLY/ref=lp_1389401031_1_3_mod_new?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&psc=1&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+                        - generic [ref=e1492]:
+                          - generic [ref=e1493]: ₹31,190
+                          - generic [aria-hidden] [ref=e1494]: ₹31,190
+                        - generic [ref=e1495]: "M.R.P: ₹54,999"
+                        - generic [ref=e1496]:
+                          - text: "M.R.P:"
+                          - generic [ref=e1497]:
+                            - generic [ref=e1498]: ₹54,999
+                            - text: ₹54,999
+                      - text: (43% off)
+                  - generic [ref=e1499]: Up to 5% back with Amazon Pay ICICI card
+                  - generic [ref=e1505]:
+                    - generic [ref=e1506]: FREE delivery Wed, 21 Oct
+                    - generic [ref=e1508]: Or fastest delivery Tomorrow, 17 Oct
+            - generic [ref=e1513]:
+              - link [aria-hidden] [ref=e1516] [cursor=pointer]:
+                - /url: /Storage-Segments-Fastest-Processor-Smoothest/dp/B0GS5Y7QBF/ref=lp_1389401031_1_4?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+              - generic [ref=e1519]:
+                - group "colours available" [ref=e1521]:
+                  - list [ref=e1522]:
+                    - generic [ref=e1523]:
+                      - listitem:
+                        - link "Mist Blue":
+                          - /url: /Storage-Segments-Fastest-Processor-Smoothest/dp/B0GS5Y7QBF/ref=cs_sr_dp_1?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+                          - generic [ref=e1524] [cursor=pointer]
+                    - generic [ref=e1526]:
+                      - listitem:
+                        - link "Black":
+                          - /url: /Storage-Segments-Fastest-Processor-Smoothest/dp/B0GS5SM6JR/ref=cs_sr_dp_2?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+                          - generic [ref=e1527] [cursor=pointer]
+                    - generic [ref=e1529]:
+                      - listitem:
+                        - link "Sunset Orange":
+                          - /url: /Storage-Segments-Fastest-Processor-Smoothest/dp/B0GS5N7M97/ref=cs_sr_dp_3?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+                          - generic [ref=e1530] [cursor=pointer]
+                - link [ref=e1533] [cursor=pointer]:
+                  - /url: /Storage-Segments-Fastest-Processor-Smoothest/dp/B0GS5Y7QBF/ref=lp_1389401031_1_4?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+                  - heading "REDMI A7 Pro 5G (Mist Blue, 4GB RAM, 64GB Storage) | Segment's Fastest Processor | Segment's Largest Battery | Segment's Largest & Smoothest 6.9in 120Hz Display" [level=2] [ref=e1534]
+                - generic [ref=e1535]:
+                  - generic [ref=e1536]:
+                    - text: "3.5"
+                    - button "3.5 out of 5 stars, rating details" [ref=e1538] [cursor=pointer]:
+                      - generic [ref=e1540]: 3.5 out of 5 stars
+                    - link "2,992 ratings" [ref=e1542] [cursor=pointer]:
+                      - /url: /Storage-Segments-Fastest-Processor-Smoothest/dp/B0GS5Y7QBF/ref=lp_1389401031_1_4?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D#customerReviews
+                      - text: (2.9K)
+                  - generic [ref=e1543]: 2K+ bought in past month
+                - generic [ref=e1544]:
+                  - link "Great Indian Festival" [ref=e1546] [cursor=pointer]:
+                    - /url: /deals
+                  - generic [ref=e1552]:
+                    - generic [ref=e1553]: Price, product page
+                    - 'link "₹14,497 M.R.P: ₹26,999 M.R.P: ₹26,999" [ref=e1554] [cursor=pointer]':
+                      - /url: /Storage-Segments-Fastest-Processor-Smoothest/dp/B0GS5Y7QBF/ref=lp_1389401031_1_4?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+                      - generic [ref=e1555]:
+                        - generic [ref=e1556]: ₹14,497
+                        - generic [aria-hidden] [ref=e1557]: ₹14,497
+                      - generic [ref=e1558]: "M.R.P: ₹26,999"
+                      - generic [ref=e1559]:
+                        - text: "M.R.P:"
+                        - generic [ref=e1560]:
+                          - generic [ref=e1561]: ₹26,999
+                          - text: ₹26,999
+                    - text: (46% off)
+                  - generic [ref=e1562]: Up to 5% back with Amazon Pay ICICI card
+                - generic [ref=e1569]:
+                  - generic [ref=e1570]: FREE delivery Sun, 18 Oct
+                  - generic [ref=e1572]: Or fastest delivery Tomorrow 6 am - 10 am
+            - generic [ref=e1577]:
+              - link [aria-hidden] [ref=e1580] [cursor=pointer]:
+                - /url: /Storage-Segments-Fastest-Processor-Smoothest/dp/B0GS5N7M97/ref=lp_1389401031_1_5?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+              - generic [ref=e1583]:
+                - group "colours available" [ref=e1585]:
+                  - list [ref=e1586]:
+                    - generic [ref=e1587]:
+                      - listitem:
+                        - link "Sunset Orange":
+                          - /url: /Storage-Segments-Fastest-Processor-Smoothest/dp/B0GS5N7M97/ref=cs_sr_dp_1?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+                          - generic [ref=e1588] [cursor=pointer]
+                    - generic [ref=e1590]:
+                      - listitem:
+                        - link "Black":
+                          - /url: /Storage-Segments-Fastest-Processor-Smoothest/dp/B0GS5SM6JR/ref=cs_sr_dp_2?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+                          - generic [ref=e1591] [cursor=pointer]
+                    - generic [ref=e1593]:
+                      - listitem:
+                        - link "Mist Blue":
+                          - /url: /Storage-Segments-Fastest-Processor-Smoothest/dp/B0GS5Y7QBF/ref=cs_sr_dp_3?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+                          - generic [ref=e1594] [cursor=pointer]
+                - link [ref=e1597] [cursor=pointer]:
+                  - /url: /Storage-Segments-Fastest-Processor-Smoothest/dp/B0GS5N7M97/ref=lp_1389401031_1_5?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+                  - heading "REDMI A7 Pro 5G (Sunset Orange, 4GB RAM, 64GB Storage) | Segment's Fastest Processor | Segment's Largest Battery | Segment's Largest & Smoothest 6.9in 120Hz Display" [level=2] [ref=e1598]
+                - generic [ref=e1599]:
+                  - generic [ref=e1600]:
+                    - text: "3.5"
+                    - button "3.5 out of 5 stars, rating details" [ref=e1602] [cursor=pointer]:
+                      - generic [ref=e1604]: 3.5 out of 5 stars
+                    - link "2,992 ratings" [ref=e1606] [cursor=pointer]:
+                      - /url: /Storage-Segments-Fastest-Processor-Smoothest/dp/B0GS5N7M97/ref=lp_1389401031_1_5?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D#customerReviews
+                      - text: (2.9K)
+                  - generic [ref=e1607]: 1K+ bought in past month
+                - generic [ref=e1608]:
+                  - link "Great Indian Festival" [ref=e1610] [cursor=pointer]:
+                    - /url: /deals
+                  - generic [ref=e1616]:
+                    - generic [ref=e1617]: Price, product page
+                    - 'link "₹14,497 M.R.P: ₹26,999 M.R.P: ₹26,999" [ref=e1618] [cursor=pointer]':
+                      - /url: /Storage-Segments-Fastest-Processor-Smoothest/dp/B0GS5N7M97/ref=lp_1389401031_1_5?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+                      - generic [ref=e1619]:
+                        - generic [ref=e1620]: ₹14,497
+                        - generic [aria-hidden] [ref=e1621]: ₹14,497
+                      - generic [ref=e1622]: "M.R.P: ₹26,999"
+                      - generic [ref=e1623]:
+                        - text: "M.R.P:"
+                        - generic [ref=e1624]:
+                          - generic [ref=e1625]: ₹26,999
+                          - text: ₹26,999
+                    - text: (46% off)
+                  - generic [ref=e1626]: Up to 5% back with Amazon Pay ICICI card
+                - generic [ref=e1633]:
+                  - generic [ref=e1634]: FREE delivery Sun, 18 Oct
+                  - generic [ref=e1636]: Or fastest delivery Tomorrow 6 am - 10 am
+            - generic [ref=e1641]:
+              - link [aria-hidden] [ref=e1644] [cursor=pointer]:
+                - /url: /boAt-Charging-Transfer-Tangle-Free-Aluminium/dp/B0FMR16CSW/ref=lp_1389401031_1_6?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+              - generic [ref=e1647]:
+                - link [ref=e1649] [cursor=pointer]:
+                  - /url: /boAt-Charging-Transfer-Tangle-Free-Aluminium/dp/B0FMR16CSW/ref=lp_1389401031_1_6?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+                  - heading "boAt Type A to C 65W Fast Charging Cable with 480 Mbps Data Transfer, Tangle-Free Cable in Premium Nylon Braided Design & Durable Aluminium Alloy Shell (Carbon Black)" [level=2] [ref=e1650]
+                - generic [ref=e1651]:
+                  - generic [ref=e1652]:
+                    - text: "4.0"
+                    - button "4.0 out of 5 stars, rating details" [ref=e1654] [cursor=pointer]:
+                      - generic [ref=e1656]: 4.0 out of 5 stars
+                    - link "28,098 ratings" [ref=e1658] [cursor=pointer]:
+                      - /url: /boAt-Charging-Transfer-Tangle-Free-Aluminium/dp/B0FMR16CSW/ref=lp_1389401031_1_6?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D#customerReviews
+                      - text: (28K)
+                  - generic [ref=e1659]: 2K+ bought in past month
+                - generic [ref=e1660]:
+                  - generic [ref=e1662]:
+                    - generic [ref=e1663]: Price, product page
+                    - 'link "₹189 M.R.P: ₹799 M.R.P: ₹799" [ref=e1664] [cursor=pointer]':
+                      - /url: /boAt-Charging-Transfer-Tangle-Free-Aluminium/dp/B0FMR16CSW/ref=lp_1389401031_1_6?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+                      - generic [ref=e1665]:
+                        - generic [ref=e1666]: ₹189
+                        - generic [aria-hidden] [ref=e1667]: ₹189
+                      - generic [ref=e1668]: "M.R.P: ₹799"
+                      - generic [ref=e1669]:
+                        - text: "M.R.P:"
+                        - generic [ref=e1670]:
+                          - generic [ref=e1671]: ₹799
+                          - text: ₹799
+                    - text: (76% off)
+                  - generic [ref=e1672]: Up to 5% back with Amazon Pay ICICI card
+                - generic [ref=e1679]:
+                  - generic [ref=e1680]: FREE delivery Sun, 18 Oct
+                  - generic [ref=e1682]: Or fastest delivery Tomorrow 6 am - 10 am
+            - generic [ref=e1687]:
+              - link [aria-hidden] [ref=e1690] [cursor=pointer]:
+                - /url: /Google-Pixel-11-5G-Obsidian/dp/B0HFX8WCNF/ref=lp_1389401031_1_7_mod_primary_new?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+              - generic [ref=e1693]:
+                - link [ref=e1695] [cursor=pointer]:
+                  - /url: /Google-Pixel-11-5G-Obsidian/dp/B0HFX8WCNF/ref=lp_1389401031_1_7_mod_primary_new?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+                  - heading "Google Pixel 11 5G (Obsidian) | 12GB RAM, 256GB Storage" [level=2] [ref=e1696]
+                - generic [ref=e1697]:
+                  - generic [ref=e1698]:
+                    - text: "4.0"
+                    - button "4.0 out of 5 stars, rating details" [ref=e1700] [cursor=pointer]:
+                      - generic [ref=e1702]: 4.0 out of 5 stars
+                    - link "9 ratings" [ref=e1704] [cursor=pointer]:
+                      - /url: /Google-Pixel-11-5G-Obsidian/dp/B0HFX8WCNF/ref=lp_1389401031_1_7_mod_primary_new?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D#customerReviews
+                      - text: (9)
+                  - generic [ref=e1705]: 400+ bought in past month
+                - generic [ref=e1706]:
+                  - generic [ref=e1708]:
+                    - generic [ref=e1709]: Price, product page
+                    - 'link "₹79,000 M.R.P: ₹94,999 M.R.P: ₹94,999" [ref=e1710] [cursor=pointer]':
+                      - /url: /Google-Pixel-11-5G-Obsidian/dp/B0HFX8WCNF/ref=lp_1389401031_1_7_mod_primary_new?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+                      - generic [ref=e1711]:
+                        - generic [ref=e1712]: ₹79,000
+                        - generic [aria-hidden] [ref=e1713]: ₹79,000
+                      - generic [ref=e1714]: "M.R.P: ₹94,999"
+                      - generic [ref=e1715]:
+                        - text: "M.R.P:"
+                        - generic [ref=e1716]:
+                          - generic [ref=e1717]: ₹94,999
+                          - text: ₹94,999
+                    - text: (17% off)
+                  - generic [ref=e1718]: Up to 5% back with Amazon Pay ICICI card
+                - generic [ref=e1723]: FREE delivery Fri, 23 Oct
+                - generic [ref=e1729]:
+                  - separator [aria-hidden] [ref=e1730]
+                  - link "Get it faster" [ref=e1731] [cursor=pointer]:
+                    - /url: /Google-Pixel-11-5G-Obsidian/dp/B0HFX8WCNF/ref=lp_1389401031_1_7_mod_new?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&psc=1&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+                  - link:
+                    - /url: /Google-Pixel-11-5G-Obsidian/dp/B0HFX8WCNF/ref=lp_1389401031_1_7_mod_new?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&psc=1&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+                  - generic [ref=e1732]:
+                    - link:
+                      - /url: /Google-Pixel-11-5G-Obsidian/dp/B0HFX8WCNF/ref=lp_1389401031_1_7_mod_new?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&psc=1&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+                    - generic [ref=e1733]:
+                      - link "Price, product page":
+                        - /url: /Google-Pixel-11-5G-Obsidian/dp/B0HFX8WCNF/ref=lp_1389401031_1_7_mod_new?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&psc=1&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+                      - 'link "₹80,000 M.R.P: ₹89,999 M.R.P: ₹89,999" [ref=e1735] [cursor=pointer]':
+                        - /url: /Google-Pixel-11-5G-Obsidian/dp/B0HFX8WCNF/ref=lp_1389401031_1_7_mod_new?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&psc=1&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+                        - generic [ref=e1736]:
+                          - generic [ref=e1737]: ₹80,000
+                          - generic [aria-hidden] [ref=e1738]: ₹80,000
+                        - generic [ref=e1739]: "M.R.P: ₹89,999"
+                        - generic [ref=e1740]:
+                          - text: "M.R.P:"
+                          - generic [ref=e1741]:
+                            - generic [ref=e1742]: ₹89,999
+                            - text: ₹89,999
+                      - text: (11% off)
+                  - generic [ref=e1743]: Up to 5% back with Amazon Pay ICICI card
+                  - generic [ref=e1749]:
+                    - generic [ref=e1750]: FREE delivery Sun, 18 Oct
+                    - generic [ref=e1752]: Or fastest delivery Tomorrow, 17 Oct
+            - generic [ref=e1757]:
+              - link [aria-hidden] [ref=e1760] [cursor=pointer]:
+                - /url: /Google-45W-USB-C-Power-Charger/dp/B0DTJ9JMN8/ref=lp_1389401031_1_8?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+              - generic [ref=e1763]:
+                - link [ref=e1765] [cursor=pointer]:
+                  - /url: /Google-45W-USB-C-Power-Charger/dp/B0DTJ9JMN8/ref=lp_1389401031_1_8?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+                  - heading "Google 45W USB-C Power Charger" [level=2] [ref=e1766]
+                - generic [ref=e1767]:
+                  - generic [ref=e1768]:
+                    - text: "3.5"
+                    - button "3.5 out of 5 stars, rating details" [ref=e1770] [cursor=pointer]:
+                      - generic [ref=e1772]: 3.5 out of 5 stars
+                    - link "3 ratings" [ref=e1774] [cursor=pointer]:
+                      - /url: /Google-45W-USB-C-Power-Charger/dp/B0DTJ9JMN8/ref=lp_1389401031_1_8?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D#customerReviews
+                      - text: (3)
+                  - generic [ref=e1775]: 2K+ bought in past month
+                - generic [ref=e1776]:
+                  - generic [ref=e1778]:
+                    - generic [ref=e1779]: Price, product page
+                    - 'link "₹2,850 M.R.P: ₹3,499 M.R.P: ₹3,499" [ref=e1780] [cursor=pointer]':
+                      - /url: /Google-45W-USB-C-Power-Charger/dp/B0DTJ9JMN8/ref=lp_1389401031_1_8?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+                      - generic [ref=e1781]:
+                        - generic [ref=e1782]: ₹2,850
+                        - generic [aria-hidden] [ref=e1783]: ₹2,850
+                      - generic [ref=e1784]: "M.R.P: ₹3,499"
+                      - generic [ref=e1785]:
+                        - text: "M.R.P:"
+                        - generic [ref=e1786]:
+                          - generic [ref=e1787]: ₹3,499
+                          - text: ₹3,499
+                    - text: (19% off)
+                  - generic [ref=e1788]: Up to 5% back with Amazon Pay ICICI card
+                - generic [ref=e1795]:
+                  - generic [ref=e1796]: FREE delivery Thu, 22 Oct
+                  - generic [ref=e1798]: Or fastest delivery Wed, 21 Oct
+                - generic [ref=e1801]:
+                  - text: More Buying Choices₹2,849
+                  - link "(3 new offers)" [ref=e1802] [cursor=pointer]:
+                    - /url: /gp/offer-listing/B0DTJ9JMN8/ref=lp_1389401031_1_8_olp?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S
+            - generic [ref=e1806]:
+              - link [aria-hidden] [ref=e1809] [cursor=pointer]:
+                - /url: /Storage-Segments-Fastest-Processor-Smoothest/dp/B0GS5SM6JR/ref=lp_1389401031_1_9?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+              - generic [ref=e1812]:
+                - group "colours available" [ref=e1814]:
+                  - list [ref=e1815]:
+                    - generic [ref=e1816]:
+                      - listitem:
+                        - link "Black":
+                          - /url: /Storage-Segments-Fastest-Processor-Smoothest/dp/B0GS5SM6JR/ref=cs_sr_dp_1?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+                          - generic [ref=e1817] [cursor=pointer]
+                    - generic [ref=e1819]:
+                      - listitem:
+                        - link "Mist Blue":
+                          - /url: /Storage-Segments-Fastest-Processor-Smoothest/dp/B0GS5Y7QBF/ref=cs_sr_dp_2?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+                          - generic [ref=e1820] [cursor=pointer]
+                    - generic [ref=e1822]:
+                      - listitem:
+                        - link "Sunset Orange":
+                          - /url: /Storage-Segments-Fastest-Processor-Smoothest/dp/B0GS5N7M97/ref=cs_sr_dp_3?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+                          - generic [ref=e1823] [cursor=pointer]
+                - link [ref=e1826] [cursor=pointer]:
+                  - /url: /Storage-Segments-Fastest-Processor-Smoothest/dp/B0GS5SM6JR/ref=lp_1389401031_1_9?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+                  - heading "REDMI A7 Pro 5G (Black, 4GB RAM, 64GB Storage) | Segment's Fastest Processor | Segment's Largest Battery | Segment's Largest & Smoothest 6.9in 120Hz Display" [level=2] [ref=e1827]
+                - generic [ref=e1828]:
+                  - generic [ref=e1829]:
+                    - text: "3.5"
+                    - button "3.5 out of 5 stars, rating details" [ref=e1831] [cursor=pointer]:
+                      - generic [ref=e1833]: 3.5 out of 5 stars
+                    - link "2,992 ratings" [ref=e1835] [cursor=pointer]:
+                      - /url: /Storage-Segments-Fastest-Processor-Smoothest/dp/B0GS5SM6JR/ref=lp_1389401031_1_9?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D#customerReviews
+                      - text: (2.9K)
+                  - generic [ref=e1836]: 1K+ bought in past month
+                - generic [ref=e1837]:
+                  - link "Great Indian Festival" [ref=e1839] [cursor=pointer]:
+                    - /url: /deals
+                  - generic [ref=e1845]:
+                    - generic [ref=e1846]: Price, product page
+                    - 'link "₹14,497 M.R.P: ₹26,999 M.R.P: ₹26,999" [ref=e1847] [cursor=pointer]':
+                      - /url: /Storage-Segments-Fastest-Processor-Smoothest/dp/B0GS5SM6JR/ref=lp_1389401031_1_9?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+                      - generic [ref=e1848]:
+                        - generic [ref=e1849]: ₹14,497
+                        - generic [aria-hidden] [ref=e1850]: ₹14,497
+                      - generic [ref=e1851]: "M.R.P: ₹26,999"
+                      - generic [ref=e1852]:
+                        - text: "M.R.P:"
+                        - generic [ref=e1853]:
+                          - generic [ref=e1854]: ₹26,999
+                          - text: ₹26,999
+                    - text: (46% off)
+                  - generic [ref=e1855]: Up to 5% back with Amazon Pay ICICI card
+                - generic [ref=e1862]:
+                  - generic [ref=e1863]: FREE delivery Sun, 18 Oct
+                  - generic [ref=e1865]: Or fastest delivery Tomorrow 6 am - 10 am
+            - generic [ref=e1870]:
+              - generic "Amazon's Choice" [ref=e1872]
+              - link [aria-hidden] [ref=e1879] [cursor=pointer]:
+                - /url: /Apple-Watch-Black-Aluminium-Sport/dp/B0FQFB3JPD/ref=lp_1389401031_1_10?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+              - generic [ref=e1882]:
+                - link [ref=e1884] [cursor=pointer]:
+                  - /url: /Apple-Watch-Black-Aluminium-Sport/dp/B0FQFB3JPD/ref=lp_1389401031_1_10?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+                  - heading "Apple Watch Series 11 GPS 42mm Jet Black Aluminium Case with Black Sport Band - S/M" [level=2] [ref=e1885]
+                - generic [ref=e1886]:
+                  - generic [ref=e1887]:
+                    - text: "4.7"
+                    - button "4.7 out of 5 stars, rating details" [ref=e1889] [cursor=pointer]:
+                      - generic [ref=e1891]: 4.7 out of 5 stars
+                    - link "115 ratings" [ref=e1893] [cursor=pointer]:
+                      - /url: /Apple-Watch-Black-Aluminium-Sport/dp/B0FQFB3JPD/ref=lp_1389401031_1_10?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D#customerReviews
+                      - text: (115)
+                  - generic [ref=e1894]: 1K+ bought in past month
+                - generic [ref=e1895]:
+                  - link "Great Indian Festival" [ref=e1897] [cursor=pointer]:
+                    - /url: /deals
+                  - generic [ref=e1903]:
+                    - generic [ref=e1904]: Price, product page
+                    - 'link "₹34,499 M.R.P: ₹46,900 M.R.P: ₹46,900" [ref=e1905] [cursor=pointer]':
+                      - /url: /Apple-Watch-Black-Aluminium-Sport/dp/B0FQFB3JPD/ref=lp_1389401031_1_10?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+                      - generic [ref=e1906]:
+                        - generic [ref=e1907]: ₹34,499
+                        - generic [aria-hidden] [ref=e1908]: ₹34,499
+                      - generic [ref=e1909]: "M.R.P: ₹46,900"
+                      - generic [ref=e1910]:
+                        - text: "M.R.P:"
+                        - generic [ref=e1911]:
+                          - generic [ref=e1912]: ₹46,900
+                          - text: ₹46,900
+                    - text: (26% off)
+                  - generic [ref=e1913]: Up to 5% back with Amazon Pay ICICI card
+                - generic [ref=e1920]:
+                  - generic [ref=e1921]: FREE delivery Sun, 18 Oct
+                  - generic [ref=e1923]: Or fastest delivery Tomorrow 6 am - 10 am
+            - generic [ref=e1928]:
+              - group "Best sellerin Cell Phone Bumpers" [ref=e1933]:
+                - generic "Best seller" [ref=e1935]
+              - link [aria-hidden] [ref=e1938] [cursor=pointer]:
+                - /url: /TheGiftKart-Moto-Edge-Fusion-Transparent/dp/B0GRGY8GTV/ref=lp_1389401031_1_11?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+              - generic [ref=e1941]:
+                - link [ref=e1943] [cursor=pointer]:
+                  - /url: /TheGiftKart-Moto-Edge-Fusion-Transparent/dp/B0GRGY8GTV/ref=lp_1389401031_1_11?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+                  - heading "TheGiftKart Crystal Clear Back Cover Case for Motorola Moto Edge 70 Fusion 5G | 360 Degree Protection | Shock Proof Design | Transparent Back Case Cover (PC & TPU, Transparent Bumper)" [level=2] [ref=e1944]
+                - generic [ref=e1945]:
+                  - generic [ref=e1946]:
+                    - text: "4.1"
+                    - button "4.1 out of 5 stars, rating details" [ref=e1948] [cursor=pointer]:
+                      - generic [ref=e1950]: 4.1 out of 5 stars
+                    - link "20,303 ratings" [ref=e1952] [cursor=pointer]:
+                      - /url: /TheGiftKart-Moto-Edge-Fusion-Transparent/dp/B0GRGY8GTV/ref=lp_1389401031_1_11?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D#customerReviews
+                      - text: (20.3K)
+                  - generic [ref=e1953]: 1K+ bought in past month
+                - generic [ref=e1954]:
+                  - link "Great Indian Festival" [ref=e1956] [cursor=pointer]:
+                    - /url: /deals
+                  - generic [ref=e1962]:
+                    - generic [ref=e1963]: Price, product page
+                    - 'link "₹284 M.R.P: ₹999 M.R.P: ₹999" [ref=e1964] [cursor=pointer]':
+                      - /url: /TheGiftKart-Moto-Edge-Fusion-Transparent/dp/B0GRGY8GTV/ref=lp_1389401031_1_11?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+                      - generic [ref=e1965]:
+                        - generic [ref=e1966]: ₹284
+                        - generic [aria-hidden] [ref=e1967]: ₹284
+                      - generic [ref=e1968]: "M.R.P: ₹999"
+                      - generic [ref=e1969]:
+                        - text: "M.R.P:"
+                        - generic [ref=e1970]:
+                          - generic [ref=e1971]: ₹999
+                          - text: ₹999
+                    - text: (72% off)
+                  - generic [ref=e1972]: Up to 5% back with Amazon Pay ICICI card
+                - generic [ref=e1979]:
+                  - generic [ref=e1980]: FREE delivery Sun, 18 Oct
+                  - generic [ref=e1982]: Or fastest delivery Tomorrow 6 am - 10 am
+            - generic [ref=e1987]:
+              - link [aria-hidden] [ref=e1990] [cursor=pointer]:
+                - /url: /iQOO-Prismatic-Dimensity-Processor-OriginOS/dp/B0HG96MZ9P/ref=lp_1389401031_1_12?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+              - generic [ref=e1993]:
+                - group "colours available" [ref=e1995]:
+                  - list [ref=e1996]:
+                    - generic [ref=e1997]:
+                      - listitem:
+                        - link "Prismatic Green":
+                          - /url: /iQOO-Prismatic-Dimensity-Processor-OriginOS/dp/B0HG96MZ9P/ref=cs_sr_dp_1?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+                          - generic [ref=e1998] [cursor=pointer]
+                    - generic [ref=e2000]:
+                      - listitem:
+                        - link "Titan Black":
+                          - /url: /iQOO-Prismatic-Dimensity-Processor-OriginOS/dp/B0HG929FR4/ref=cs_sr_dp_2?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+                          - generic [ref=e2001] [cursor=pointer]
+                - link [ref=e2004] [cursor=pointer]:
+                  - /url: /iQOO-Prismatic-Dimensity-Processor-OriginOS/dp/B0HG96MZ9P/ref=lp_1389401031_1_12?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+                  - heading "iQOO Z11xa 5G (Prismatic Green, 8GB RAM, 128 GB Storage) | Massive 7200mAh Battery | Dimensity 7400 Turbo Processor | OriginOS 6 with 4 Years of Security Updates*" [level=2] [ref=e2005]
+                - generic [ref=e2006]:
+                  - generic [ref=e2007]:
+                    - text: "4.4"
+                    - button "4.4 out of 5 stars, rating details" [ref=e2009] [cursor=pointer]:
+                      - generic [ref=e2011]: 4.4 out of 5 stars
+                    - link "58 ratings" [ref=e2013] [cursor=pointer]:
+                      - /url: /iQOO-Prismatic-Dimensity-Processor-OriginOS/dp/B0HG96MZ9P/ref=lp_1389401031_1_12?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D#customerReviews
+                      - text: (58)
+                  - generic [ref=e2014]: 5K+ bought in past month
+                - generic [ref=e2015]:
+                  - link "Great Indian Festival" [ref=e2017] [cursor=pointer]:
+                    - /url: /deals
+                  - generic [ref=e2023]:
+                    - generic [ref=e2024]: Price, product page
+                    - 'link "₹28,998 M.R.P: ₹40,999 M.R.P: ₹40,999" [ref=e2025] [cursor=pointer]':
+                      - /url: /iQOO-Prismatic-Dimensity-Processor-OriginOS/dp/B0HG96MZ9P/ref=lp_1389401031_1_12?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=BD6AGZWQP3CEQ78T1J7S&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+                      - generic [ref=e2026]:
+                        - generic [ref=e2027]: ₹28,998
+                        - generic [aria-hidden] [ref=e2028]: ₹28,998
+                      - generic [ref=e2029]: "M.R.P: ₹40,999"
+                      - generic [ref=e2030]:
+                        - text: "M.R.P:"
+                        - generic [ref=e2031]:
+                          - generic [ref=e2032]: ₹40,999
+                          - text: ₹40,999
+                    - text: (29% off)
+                  - generic [ref=e2035]:
+                    - generic [ref=e2036]: You pay ₹24,998
+                    - text: with coupon
+                - generic [ref=e2039]:
+                  - generic [ref=e2040]: FREE delivery Sun, 18 Oct
+                  - generic [ref=e2042]: Or fastest delivery Tomorrow 6 am - 10 am
+          - link "See all results" [ref=e2047] [cursor=pointer]:
+            - /url: /s?i=electronics&rh=n%3A1389401031&s=popularity-rank&fs=true&ref=lp_1389401031_sar
+    - generic [ref=e2058]:
+      - heading "Buy Mobile Phones Online at the Best Prices in India — Shop Smartphones on Amazon.in" [level=2] [ref=e2059]
+      - paragraph [ref=e2060]: Buy mobile phones online in India at the best prices on Amazon.in. Shop the widest range of smartphones from Samsung, Apple, OnePlus, Xiaomi, Redmi, realme, iQOO, OPPO, vivo, Motorola, Tecno and Lava with up to 40% off, No Cost EMI, exchange offers. Whether you want the latest 5G smartphone under ₹10,000, a flagship like the Samsung Galaxy S25 Ultra or iPhone 17, or a budget-friendly Redmi or realme under ₹15,000, Amazon.in has the mobile phone that fits your needs, your budget, and your lifestyle. From fast-charging 5G phones to AI-powered flagships, Amazon.in offers mobile phones at lowest prices with genuine brand warranty, fast delivery across India. Compare specs, read verified customer reviews, and choose from thousands of models all with the confidence of shopping on India's most trusted online store.
+      - heading "Shop Mobile Phones by Price Range" [level=2] [ref=e2061]
+      - paragraph [ref=e2062]: We stock mobile phones across every price point from entry-level 4G feature smartphones starting under ₹5,000 to premium 5G flagships above ₹1,00,000. Pick your budget and find the best mobile phone in India.
+      - heading "Best Mobile Phones Under ₹5,000" [level=2] [ref=e2063]
+      - paragraph [ref=e2064]: Affordable 4G/5G smartphones perfect for students, first-time buyers, and secondary phones. Reliable performance, long battery life, and essential features.
+      - paragraph [ref=e2065]: "Popular picks: JioBharat J1 4G."
+      - heading "Best Mobile Phones ₹5,000 – ₹10,000" [level=2] [ref=e2066]
+      - paragraph [ref=e2067]: The sweet spot for budget 5G mobile phones in India great cameras, large displays, and 5,000 mAh batteries from trusted brands.
+      - paragraph [ref=e2068]: "Popular picks: Samsung M07, POP X, Lava Bold N2, Lava Bold T1, Zeno 100."
+      - heading "Best Mobile Phones ₹10,000 – ₹20,000" [level=2] [ref=e2069]
+      - paragraph [ref=e2070]: Mid-range 5G smartphones with AMOLED displays, 50MP+ triple cameras, 8GB RAM, and AI features the most popular tier in India.
+      - paragraph [ref=e2071]: "Popular picks: Samsung Galaxy M17 5G, Samsung Galaxy M17e 5G, REDMI A7 Pro 5G, iQOO Z11x 5G, realme narzo 100 Lite 5G."
+      - heading "Best Mobile Phones ₹20,000 – ₹30,000" [level=2] [ref=e2072]
+      - paragraph [ref=e2073]: Premium mid-range phones with flagship-grade chipsets, 120Hz displays, fast charging, and stabilized camera systems.
+      - paragraph [ref=e2074]: "Popular picks: OnePlus Nord CE6, iQOO Z11x 5G, Samsung Galaxy M56 5G, iQOO Z10R 5G, iQOO Z10 5G."
+      - heading "Best Mobile Phones Above ₹30,000" [level=2] [ref=e2075]
+      - paragraph [ref=e2076]: Flagship smartphones and premium devices with the latest Snapdragon/Apple chips, AI photography, titanium builds, and multi-year software support.
+      - paragraph [ref=e2077]: "Popular picks: Samsung Galaxy S25 Ultra 5G Smartphone, OnePlus Nord CE6, iPhone 16, OnePlus Nord 6, Apple iPhone 15."
+      - heading "Shop Mobile Phones by Brand" [level=2] [ref=e2078]
+      - paragraph [ref=e2079]: Amazon.in is the official online store for every major mobile phone brand in India.
+      - paragraph [ref=e2080]: Explore the complete range from flagship makers to budget innovators all with manufacturer warranty, authenticated sellers, and the best online prices.
+      - heading "Samsung Mobile Phones" [level=2] [ref=e2081]
+      - paragraph [ref=e2082]: Samsung mobile phones lead the Indian market with the Galaxy S25 Ultra flagship, Galaxy A and M series for mid-range, and Galaxy F series for value-seekers. Shop the latest Samsung Galaxy 5G smartphones with Galaxy AI, 200MP cameras, and Super AMOLED displays.
+      - heading "Apple Mobile Phones" [level=2] [ref=e2083]
+      - paragraph [ref=e2084]: Buy the latest iPhone 16, iPhone 17, and iPhone 15 on Amazon.in — with Apple Intelligence, ProMotion displays, A-series chips, and the most advanced iPhone cameras. No Cost EMI and exchange offers available on all iPhone models.
+      - heading "OnePlus Mobile Phones" [level=2] [ref=e2085]
+      - paragraph [ref=e2086]: OnePlus brings flagship performance to every price tier. The OnePlus Nord CE6, Nord 5, and Nord 6 deliver fast charging and AMOLED quality in mid-range, while the OnePlus flagship 5G line competes head-to-head with the biggest names.
+      - heading "Xiaomi/Redmi Mobile Phones" [level=2] [ref=e2087]
+      - paragraph [ref=e2088]: Xiaomi and Redmi dominate value smartphones in India. From the Redmi A4 5G and Redmi 15C 5G under ₹10,000 to Xiaomi flagships — expect large batteries, big displays, and specs that punch above their price.
+      - heading "iQOO Mobile Phones" [level=2] [ref=e2089]
+      - paragraph [ref=e2090]: iQOO is the performance-first gaming smartphone brand — the iQOO Z10 Lite 5G, Z11x 5G, and iQOO 15R are built for speed, with flagship Snapdragon chips, 120Hz displays, and fast charging at aggressive prices.
+      - heading "realme Mobile Phones" [level=2] [ref=e2091]
+      - paragraph [ref=e2092]: realme makes stylish, specs-loaded 5G smartphones for young India. The realme narzo 100 Lite 5G, narzo 90 5G, and NARZO 80 Pro 5G are top sellers for students and first smartphone buyers.
+      - heading "OPPO Mobile Phones" [level=2] [ref=e2093]
+      - paragraph [ref=e2094]: OPPO focuses on camera-first smartphones with premium design. The OPPO Reno15 5G, Reno15c 5G, and F33 5G deliver portrait-grade cameras, ultra-slim designs, and AMOLED displays.
+      - heading "vivo Mobile Phones" [level=2] [ref=e2095]
+      - paragraph [ref=e2096]: vivo mobile phones combine design and camera innovation. The vivo V70 5G, V70 Elite 5G, and X300 Pro 5G bring ZEISS optics, curved displays, and long battery life.
+      - heading "Motorola Mobile Phones" [level=2] [ref=e2097]
+      - paragraph [ref=e2098]: Motorola offers clean stock-Android mobile phones with excellent build quality ideal for buyers who want a bloat-free software experience.
+      - heading "Tecno Mobile Phones" [level=2] [ref=e2099]
+      - paragraph [ref=e2100]: Tecno builds budget-friendly smartphones with big displays and large batteries — the Tecno POP X, POP X 5G, and Pova 7 Pro 5G are great entry-level options.
+      - heading "Lava Mobile Phones" [level=2] [ref=e2101]
+      - paragraph [ref=e2102]: Lava is India's proudly home-grown smartphone brand — the Lava Bold 2 5G and Bold N1 5G offer 5G connectivity at accessible prices, Made in India.
+      - heading "Shop Mobile Phones by Feature" [level=2] [ref=e2103]
+      - heading "5G Mobile Phones" [level=2] [ref=e2104]
+      - paragraph [ref=e2105]: Future-proof your next purchase with 5G smartphones from every price band. 5G phones on Amazon.in come with Snapdragon, MediaTek Dimensity, Exynos, and A-series chipsets — supporting all major Indian 5G bands.
+      - heading "Best Camera Phones" [level=2] [ref=e2106]
+      - paragraph [ref=e2107]: From 200MP Samsung Galaxy S25 Ultra shooters to Apple iPhone 17 ProMotion video and OPPO/vivo portrait specialists — shop the best camera phones in India by megapixel, sensor size, or brand.
+      - heading "Gaming Smartphones" [level=2] [ref=e2108]
+      - paragraph [ref=e2109]: iQOO, OnePlus, and ROG Phone models with flagship Snapdragon chips, 144Hz refresh rates, and pressure-sensitive triggers — engineered for BGMI, Call of Duty Mobile, and Genshin Impact.
+      - heading "Long Battery Life Phones" [level=2] [ref=e2110]
+      - paragraph [ref=e2111]: Mobile phones with 5,000 mAh, 6,000 mAh, and even 7,000 mAh batteries — from brands like Samsung M, realme narzo, and Tecno Pova.
+      - heading "Fast Charging Phones" [level=2] [ref=e2112]
+      - paragraph [ref=e2113]: Shop smartphones with 65W, 80W, 100W, and 120W fast charging — a full-day charge in 15-30 minutes.
+      - heading "Budget 4G Feature Phones" [level=2] [ref=e2114]
+      - paragraph [ref=e2115]: Classic keypad mobile phones and entry-level 4G smartphones for callers, seniors, and as reliable secondary phones. Mobile Phone Offers, EMI, and Exchange on Amazon.in
+      - paragraph [ref=e2116]: • Up to 40% off on select mobile phones during Amazon Great Indian Festival, Great Republic Day Sale, and May ART. • No Cost EMI for up to 24 months on smartphones above ₹3,000 with eligible credit/debit cards. • Exchange offer get up to ₹25,000 off by exchanging your old mobile phone. • 10% Instant Discount with SBI Credit Cards (up to ₹2,000 per transaction). • 5% cashback with Amazon Pay ICICI Credit Card on every purchase. • Free delivery across India with Amazon Prime including next-day delivery in metros. • Genuine brand warranty all phones are 100% original, sold by authorized sellers.
+      - heading "How to Choose the Best Mobile Phone in India (2026 Buyer's Guide)" [level=2] [ref=e2117]
+      - paragraph [ref=e2118]: Set your budget first. Every ₹5,000 slab on Amazon.in gives you meaningfully better cameras, displays, or chipsets. Pick the price band where you want the best-in-class.
+      - paragraph [ref=e2119]: Decide on 5G or 4G. Most phones above ₹10,000 in 2026 are 5G. Even entry-level Redmi A4 5G and realme narzo 100 Lite 5G now support 5G under ₹10,000.
+      - paragraph [ref=e2120]: "Pick your priority: camera, gaming, or battery. Camera-first? Choose Apple iPhone, Samsung Galaxy S/A series, or vivo V series. Gaming? iQOO Z/Neo or OnePlus. Battery? Samsung M or Tecno Pova."
+      - paragraph [ref=e2121]: Check the display. AMOLED displays with 90Hz/120Hz refresh rates are now available even in the ₹15,000 range — prioritise these over LCDs.
+      - paragraph [ref=e2122]: RAM and storage. For a 2-3 year future-proof phone, choose minimum 8GB RAM and 128GB storage. Flagships ship with 12GB / 256GB as standard.
+      - paragraph [ref=e2123]: Software updates. Samsung (7 years), Apple (6+ years), and OnePlus (4 years) lead on software support — a key long-term value driver.
+      - paragraph [ref=e2124]: Read Amazon verified reviews. Thousands of real-user reviews per popular model help you decide — filter by rating, verified purchase, and recent dates.
+      - heading "Why Buy Mobile Phones on Amazon.in" [level=2] [ref=e2125]
+      - paragraph [ref=e2126]: Best Prices in India — Price-matched daily against Flipkart and other leading online stores — with additional bank and card offers stacking on top.
+      - paragraph [ref=e2127]: Widest Selection of Smartphones — Every major brand — Samsung, Apple, OnePlus, Xiaomi, Redmi, realme, iQOO, OPPO, vivo, Motorola, Tecno, Lava, Google Pixel, Nothing — all in one place.
+      - paragraph [ref=e2128]: Trusted Sellers & Genuine Products — Only authorized sellers list mobile phones on Amazon.in — every phone is 100% original with full brand warranty.
+      - paragraph [ref=e2129]: Fast, Reliable Delivery — Same-day and next-day delivery available in most Indian cities with Amazon Prime.
+      - paragraph [ref=e2130]: 24/7 Customer Support — Multi-language customer support via chat, email, and phone.
+      - heading "Frequently Asked Questions — Mobile Phones on Amazon.in" [level=2] [ref=e2131]
+      - 'heading "Q: Which is the best mobile phone to buy in India in 2026?" [level=2] [ref=e2132]'
+      - paragraph [ref=e2133]: "A: The best mobile phone depends on your budget. Under ₹10,000, the Redmi A4 5G and realme narzo 100 Lite 5G lead the value segment. In the ₹15,000–₹25,000 range, Samsung Galaxy M17 5G, iQOO Z10 Lite 5G, and OnePlus Nord CE6 are top sellers. Above ₹50,000, the Samsung Galaxy S25 Ultra, iPhone 17, and OnePlus flagship dominate."
+      - 'heading "Q: Is Amazon.in cheaper than Flipkart for mobile phones?" [level=2] [ref=e2134]'
+      - paragraph [ref=e2135]: "A: Amazon.in matches and often beats Flipkart on mobile phone pricing — especially with SBI Card instant discounts, Amazon Pay ICICI cashback, and No Cost EMI stacking. During sale events like May ART, Great Indian Festival, and Great Republic Day Sale, Amazon.in offers up to 60% off."
+      - 'heading "Q: Are mobile phones on Amazon.in genuine?" [level=2] [ref=e2136]'
+      - paragraph [ref=e2137]: "A: Yes — Amazon.in only allows authorized sellers to list mobile phones, and every device comes with full manufacturer warranty. Customers get 7-day replacement and 100% purchase protection."
+      - 'heading "Q: Can I get No Cost EMI on mobile phones?" [level=2] [ref=e2138]'
+      - paragraph [ref=e2139]: "A: Yes. No Cost EMI is available on most mobile phones above ₹3,000 with eligible credit cards, debit cards, and through Amazon Pay Later — for tenures up to 24 months."
+      - 'heading "Q: How does Amazon mobile exchange work?" [level=2] [ref=e2140]'
+      - paragraph [ref=e2141]: "A: Enter your phone model at checkout, get an instant exchange value (up to ₹25,000), and the discount is applied to your new purchase. A technician picks up your old phone during delivery."
+      - 'heading "Q: What 5G mobile phones are available under ₹10,000?" [level=2] [ref=e2142]'
+      - paragraph [ref=e2143]: "A: Budget 5G options include the Redmi A4 5G, realme narzo 100 Lite 5G, Tecno POP X 5G, iQOO Z11x 5G (entry variants), and Samsung Galaxy M07."
+      - 'heading "Q: Which is the best camera phone in India?" [level=2] [ref=e2144]'
+      - paragraph [ref=e2145]: "A: The Samsung Galaxy S25 Ultra (200MP), iPhone 17 Pro, OPPO Reno15, and vivo X300 Pro 5G consistently rank as the best camera phones — with the S25 Ultra and iPhone 17 competing for the overall top spot."
+      - paragraph [ref=e2146]: Shop Mobile Phones, Smartphones and 5G Phones Online on Amazon.in Amazon.in is your destination to buy mobile phones online in India at the best prices. Shop the latest smartphones, 5G mobile phones, budget phones, flagship phones, camera phones, and gaming smartphones — all from trusted brands like Samsung, Apple, OnePlus, Xiaomi, Redmi, realme, iQOO, OPPO, vivo, Motorola, Tecno, Lava, Nothing, and Google Pixel. With the widest selection, best deals, No Cost EMI, exchange offers, fast delivery, and genuine warranty — there's no better place to buy your next mobile phone than Amazon.in.
+  - generic [ref=e2147]:
+    - button "Back to top" [ref=e2148] [cursor=pointer]
+    - generic [ref=e2150]:
+      - generic [ref=e2151]:
+        - heading "Get to Know Us" [level=6] [ref=e2152]
+        - list [ref=e2153]:
+          - listitem [ref=e2154]:
+            - link "About Amazon" [ref=e2155] [cursor=pointer]:
+              - /url: https://www.aboutamazon.in/?utm_source=gateway&utm_medium=footer
+          - listitem [ref=e2156]:
+            - link "Careers" [ref=e2157] [cursor=pointer]:
+              - /url: https://amazon.jobs
+          - listitem [ref=e2158]:
+            - link "Press Releases" [ref=e2159] [cursor=pointer]:
+              - /url: https://press.aboutamazon.in/?utm_source=gateway&utm_medium=footer
+          - listitem [ref=e2160]:
+            - link "Amazon Science" [ref=e2161] [cursor=pointer]:
+              - /url: https://www.amazon.science
+      - generic [ref=e2163]:
+        - heading "Connect with Us" [level=6] [ref=e2164]
+        - list [ref=e2165]:
+          - listitem [ref=e2166]:
+            - link "Facebook" [ref=e2167] [cursor=pointer]:
+              - /url: https://www.facebook.com/AmazonIN
+          - listitem [ref=e2168]:
+            - link "Twitter" [ref=e2169] [cursor=pointer]:
+              - /url: https://x.com/AmazonIN
+          - listitem [ref=e2170]:
+            - link "Instagram" [ref=e2171] [cursor=pointer]:
+              - /url: https://www.instagram.com/amazondotin
+      - generic [ref=e2173]:
+        - heading "Make Money with Us" [level=6] [ref=e2174]
+        - list [ref=e2175]:
+          - listitem [ref=e2176]:
+            - link "Sell on Amazon" [ref=e2177] [cursor=pointer]:
+              - /url: /b/?node=2838698031&ld=AZINSOANavDesktopFooter_C&ref_=nav_footer_sell_C
+          - listitem [ref=e2178]:
+            - link "Sell under Amazon Accelerator" [ref=e2179] [cursor=pointer]:
+              - /url: https://accelerator.amazon.in/?ref_=map_1_b2b_GW_FT
+          - listitem [ref=e2180]:
+            - link "Protect and Build Your Brand" [ref=e2181] [cursor=pointer]:
+              - /url: https://brandservices.amazon.in/?ref=AOINABRLGNRFOOT&ld=AOINABRLGNRFOOT
+          - listitem [ref=e2182]:
+            - link "Amazon Global Selling" [ref=e2183] [cursor=pointer]:
+              - /url: https://sell.amazon.in/grow-your-business/amazon-global-selling.html?ld=AZIN_Footer_V1&ref=AZIN_Footer_V1
+          - listitem [ref=e2184]:
+            - link "Supply to Amazon" [ref=e2185] [cursor=pointer]:
+              - /url: https://supply.amazon.com/?ref_=footer_sta&lang=en-IN
+          - listitem [ref=e2186]:
+            - link "Become an Affiliate" [ref=e2187] [cursor=pointer]:
+              - /url: https://affiliate-program.amazon.in/?utm_campaign=assocshowcase&utm_medium=footer&utm_source=GW&ref_=footer_assoc
+          - listitem [ref=e2188]:
+            - link "Fulfilment by Amazon" [ref=e2189] [cursor=pointer]:
+              - /url: https://services.amazon.in/services/fulfilment-by-amazon/benefits.html/ref=az_footer_fba?ld=AWRGINFBAfooter
+          - listitem [ref=e2190]:
+            - link "Advertise Your Products" [ref=e2191] [cursor=pointer]:
+              - /url: https://advertising.amazon.in/?ref=Amz.in
+          - listitem [ref=e2192]:
+            - link "Amazon Pay on Merchants" [ref=e2193] [cursor=pointer]:
+              - /url: https://www.amazonpay.in/merchant
+      - generic [ref=e2195]:
+        - heading "Let Us Help You" [level=6] [ref=e2196]
+        - list [ref=e2197]:
+          - listitem [ref=e2198]:
+            - link "Your Account" [ref=e2199] [cursor=pointer]:
+              - /url: /gp/css/homepage.html?ref_=footer_ya
+          - listitem [ref=e2200]:
+            - link "Returns Centre" [ref=e2201] [cursor=pointer]:
+              - /url: /gp/css/returns/homepage.html?ref_=footer_hy_f_4
+          - listitem [ref=e2202]:
+            - link "Recalls and Product Safety Alerts" [ref=e2203] [cursor=pointer]:
+              - /url: https://www.amazon.in/your-product-safety-alerts?ref_=footer_bsx_ypsa
+          - listitem [ref=e2204]:
+            - link "100% Purchase Protection" [ref=e2205] [cursor=pointer]:
+              - /url: /gp/help/customer/display.html?nodeId=201083470&ref_=footer_swc
+          - listitem [ref=e2206]:
+            - link "Amazon App Download" [ref=e2207] [cursor=pointer]:
+              - /url: /gp/browse.html?node=6967393031&ref_=footer_mobapp
+          - listitem [ref=e2208]:
+            - link "Help" [ref=e2209] [cursor=pointer]:
+              - /url: /gp/help/customer/display.html?nodeId=200507590&ref_=footer_gw_m_b_he
+    - generic [ref=e2211]:
+      - link "Amazon India Home" [ref=e2214] [cursor=pointer]:
+        - /url: /ref=footer_logo
+      - generic [ref=e2217]:
+        - generic [ref=e2218]:
+          - link "Choose a language for shopping. Current selection is English." [ref=e2219] [cursor=pointer]:
+            - /url: /customer-preferences/edit?ie=UTF8&preferencesReturnUrl=%2F&ref_=footer_lang
+            - generic [ref=e2221]: English
+          - button "Expand to Change Language or Country" [ref=e2222] [cursor=pointer]
+        - button "Choose a country/region for shopping. The current selection is India." [ref=e2223] [cursor=pointer]:
+          - generic [ref=e2225]: India
+    - generic "More on Amazon" [ref=e2226]:
+      - generic "More on Amazon" [ref=e2227]:
+        - list [ref=e2228]:
+          - listitem [ref=e2229]:
+            - link [ref=e2230] [cursor=pointer]:
+              - /url: https://www.abebooks.com/
+              - heading "AbeBooks" [level=5] [ref=e2231]
+              - generic [ref=e2232]: Books, art& collectibles
+          - listitem [aria-hidden] [ref=e2233]
+          - listitem [ref=e2234]:
+            - link [ref=e2235] [cursor=pointer]:
+              - /url: https://aws.amazon.com/what-is-cloud-computing/?sc_channel=EL&sc_campaign=IN_amazonfooter
+              - heading "Amazon Web Services" [level=5] [ref=e2236]
+              - generic [ref=e2237]: Scalable CloudComputing Services
+          - listitem [aria-hidden] [ref=e2238]
+          - listitem [ref=e2239]:
+            - link [ref=e2240] [cursor=pointer]:
+              - /url: https://www.audible.in/
+              - heading "Audible" [level=5] [ref=e2241]
+              - generic [ref=e2242]: DownloadAudio Books
+          - listitem [aria-hidden] [ref=e2243]
+          - listitem [ref=e2244]:
+            - link [ref=e2245] [cursor=pointer]:
+              - /url: https://www.imdb.com/
+              - heading "IMDb" [level=5] [ref=e2246]
+              - generic [ref=e2247]: Movies, TV& Celebrities
+        - list [ref=e2248]:
+          - listitem [ref=e2249]:
+            - link [ref=e2250] [cursor=pointer]:
+              - /url: https://www.shopbop.com/
+              - heading "Shopbop" [level=5] [ref=e2251]
+              - generic [ref=e2252]: DesignerFashion Brands
+          - listitem [aria-hidden] [ref=e2253]
+          - listitem [ref=e2254]:
+            - link [ref=e2255] [cursor=pointer]:
+              - /url: /business?ref=footer_aingw
+              - heading "Amazon Business" [level=5] [ref=e2256]
+              - generic [ref=e2257]: Everything ForYour Business
+          - listitem [aria-hidden] [ref=e2258]
+          - listitem [ref=e2259]:
+            - link "Amazon Music Stream millions of songs" [ref=e2260] [cursor=pointer]:
+              - /url: /music/player?ref=footer_apm
+              - heading "Amazon Music" [level=5] [ref=e2261]
+              - generic [ref=e2262]: Stream millions of songs
+          - listitem [aria-hidden] [ref=e2263]
+          - listitem [aria-hidden] [ref=e2264]
+    - generic [ref=e2265]:
+      - list [ref=e2266]:
+        - listitem [ref=e2267]:
+          - link "Conditions of Use & Sale" [ref=e2268] [cursor=pointer]:
+            - /url: /gp/help/customer/display.html?nodeId=200545940&ref_=footer_cou
+        - listitem [ref=e2269]:
+          - link "Privacy Notice" [ref=e2270] [cursor=pointer]:
+            - /url: /gp/help/customer/display.html?nodeId=200534380&ref_=footer_privacy
+        - listitem [ref=e2271]:
+          - link "Interest-Based Ads" [ref=e2272] [cursor=pointer]:
+            - /url: /gp/help/customer/display.html?nodeId=202075050&ref_=footer_iba
+      - generic [ref=e2273]: © 1996-2026, Amazon.com, Inc. or its affiliates
+  - iframe [ref=e2275]:
+    - iframe [ref=f1e2]
+```
+
+# Test source
+
+```ts
+  1  | import { test } from '@playwright/test';
+  2  | 
+  3  | test('Validating Login Functionality', async ({ page }) => {
+  4  | 
+  5  |     await page.goto('https://www.amazon.in/mobile-phones/b/?ie=UTF8&node=1389401031&ref_=nav_cs_mobiles');
+  6  | 
+  7  |     //Username
+  8  |     const userName = page.locator('//input[@name="username"]');
+> 9  |     await userName.fill('Admin');
+     |                    ^ Error: locator.fill: Test timeout of 30000ms exceeded.
+  10 |     
+  11 |     // //Password
+  12 |     // const password = page.locator('//input[@placeholder="Password"]');
+  13 |     // await password.fill('admin123');
+  14 | 
+  15 |     // //Click Login
+  16 |     // const loginButton = page.locator('//button[@type="submit"]');
+  17 |     // await loginButton.click();
+  18 | 
+  19 |     // //Click Admin
+  20 |     // const adminPage = page.locator('//a[@class="oxd-main-menu-item active"]')
+  21 |     // await adminPage.click();
+  22 | 
+  23 |     // //Admin username
+  24 | 
+  25 |     // //Print Page Title
+  26 |     // const pageTitle = await page.title();
+  27 |     // console.log('Page title:', pageTitle);
+  28 | 
+  29 |     // await page.waitForTimeout(100000);
+  30 | });
+  31 | 
+  32 | /*
+  33 | 
+  34 | import { test, expect } from '@playwright/test';
+  35 | 
+  36 | test('Validating Login Functionality', async ({ page }) => {
+  37 |   await page.goto('[demowebshop.tricentis.com](https://demowebshop.tricentis.com/login)');
+  38 | 
+  39 |   const pageTitle = await page.title();
+  40 |   console.log('The Page Title is:', pageTitle);
+  41 | 
+  42 |   const userName = page.locator('//input[@id="Email"]');
+  43 |   await userName.fill('Admin');
+  44 |   await expect(userName).toHaveValue('Admin');
+  45 | 
+  46 |   const password = page.locator('//input[@id="Password"]');
+  47 |   await password.fill('admin123');
+  48 | 
+  49 |   const loginButton = page.locator('//input[@type="submit" and @value="Log in"]');
+  50 |   await loginButton.click();
+  51 | });
+  52 | 
+  53 | 
+  54 | test('Validating Login Functionality', async ({ page }) => {
+  55 | 
+  56 |     // const password = await page.locator('//input[@placeholder="Password"]');
+  57 |     // await password.fill('admin123');
+  58 |     // const loginButton = await page.locator('//button[@type="submit"]');
+  59 |     // await loginButton.click();
+  60 | 
+  61 |     await page.locator('//div[@id="msdd"]').click()
+  62 |     await page.getByText('Arabic').click()
+  63 |     await page.getByText('French').click()
+  64 |     await page.getByText('German').click()
+  65 |     const elementXpath = page.locator('//select[@id="country"]')
+  66 |     const gettingAttribute = await elementXpath.getAttribute('class')
+  67 |     console.log(gettingAttribute)
+  68 | 
+  69 | })
+  70 | 
+  71 | */
+```

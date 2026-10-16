@@ -1,0 +1,193 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: alertsOnce.spec.js >> Handling Alerts
+- Location: tests\alertsOnce.spec.js:3:5
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+# Page snapshot
+
+```yaml
+- generic [aria-hidden] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e5]:
+      - link [ref=e7] [cursor=pointer]:
+        - /url: http://www.automationtesting.in
+      - heading [level=1] [ref=e10]: Automation Demo Site
+    - navigation [ref=e11]:
+      - list [ref=e14]:
+        - listitem [ref=e15]:
+          - link [ref=e16] [cursor=pointer]:
+            - /url: Index.html
+            - text: Home
+        - listitem [ref=e17]:
+          - link [ref=e18] [cursor=pointer]:
+            - /url: Register.html
+            - text: Register
+        - listitem [ref=e19]:
+          - link [ref=e20] [cursor=pointer]:
+            - /url: WebTable.html
+            - text: WebTable
+        - listitem [ref=e21]:
+          - link [ref=e22] [cursor=pointer]:
+            - /url: SwitchTo.html
+            - text: SwitchTo
+          - generic [ref=e23]: 
+        - listitem [ref=e24]:
+          - link [ref=e25] [cursor=pointer]:
+            - /url: Widgets.html
+            - text: Widgets
+          - generic [ref=e26]: 
+        - listitem [ref=e27]:
+          - link [ref=e28] [cursor=pointer]:
+            - /url: Interactions.html
+            - text: Interactions
+          - generic [ref=e29]: 
+        - listitem [ref=e30]:
+          - link [ref=e31] [cursor=pointer]:
+            - /url: SwitchTo.html
+            - text: Video
+          - generic [ref=e32]: 
+        - listitem [ref=e33]:
+          - link [ref=e34] [cursor=pointer]:
+            - /url: WYSIWYG.html
+            - text: WYSIWYG
+          - generic [ref=e35]: 
+        - listitem [ref=e36]:
+          - link [ref=e37] [cursor=pointer]:
+            - /url: "#"
+            - text: More
+          - generic [ref=e38]: 
+        - listitem [ref=e39]:
+          - link [ref=e40] [cursor=pointer]:
+            - /url: http://practice.automationtesting.in/
+            - text: Practice Site
+  - generic [ref=e44]:
+    - list [ref=e46]:
+      - listitem [ref=e47]:
+        - link [ref=e48]:
+          - /url: "#OKTab"
+          - text: Alert with OK
+      - listitem [ref=e49]:
+        - link [ref=e50] [cursor=pointer]:
+          - /url: "#CancelTab"
+          - text: Alert with OK & Cancel
+      - listitem [ref=e51]:
+        - link [ref=e52] [cursor=pointer]:
+          - /url: "#Textbox"
+          - text: Alert with Textbox
+    - button [ref=e54] [cursor=pointer]: "click the button to display an alert box:"
+  - generic [ref=e56]:
+    - insertion [ref=e59]:
+      - generic [ref=e62]:
+        - heading [level=2] [ref=e64]: Discover more
+        - link [ref=e65] [cursor=pointer]:
+          - generic [ref=e66]: Automation testing tools
+        - link [ref=e70] [cursor=pointer]:
+          - generic [ref=e71]: Software testing services
+        - link [ref=e75] [cursor=pointer]:
+          - generic [ref=e76]: Web application testing
+        - link [ref=e80] [cursor=pointer]:
+          - generic [ref=e81]: QA consulting services
+        - link [ref=e85] [cursor=pointer]:
+          - generic [ref=e86]: Automation demo site
+        - link [ref=e90] [cursor=pointer]:
+          - generic [ref=e91]: Alerts testing guide
+        - link [ref=e95] [cursor=pointer]:
+          - generic [ref=e96]: Windows testing tutorial
+        - link [ref=e100] [cursor=pointer]:
+          - generic [ref=e101]: Frames testing examples
+    - insertion [ref=e107]:
+      - iframe [ref=e109]:
+        - generic [ref=f3e1]:
+          - generic [ref=f3e6]:
+            - generic [ref=f3e7]:
+              - generic "Google Gemini" [ref=f3e9]:
+                - link "Claim your Gemini student plan" [ref=f3e10] [cursor=pointer]:
+                  - /url: https://www.googleadservices.com/pagead/aclk?sa=L&ai=CDNsaihXSarbeN8mM4-EP-PWhwAjf-ZaeigHcpvnL8hX8wbWrrgEQASCPvrcvYOWS6IPYDqAB9OmL_gLIAQGoAwHIA8sEqgTyAU_QtmeKJMk8oMaaZzMyVSlr5mPbVgjNpCii7SBRgWF1mdqZ6snKxfmaYQaehpzmgqMj79HBAW2EOUmLvk_uTVHZ6YALwZEv1p60QlMUVGOnqmoou1NIz2Dwsp2kkBJ0rGV3cV3J7j_mZ84XB1p8SdwHUADo_5JW70llYhbGW-v2ADgkTBWWrSvJjcP1jA8xV4_Trf2qWBHDeGEhQgFXuVBoN8CaLOtMngjbUTwjY5opIDk6jVQTidNGuD4D-zzRoOQI5ZVCvLjierR6uPJpLva3fvtL6lOIMmroJdJgMnRNrVqoKD6vjB3Wbzn6FhLo-lcDwATNxN3v5gWIBY7Ds_xZgAf0lfSBAagHp8yxAqgH4tixAqgHpr4bqAfMzrECqAfz0RuoB5bYG6gHqpuxAqgH_uixAqgHjs4bqAeT2BuoB_DgG6gH7paxAqgH_p6xAqgHr76xAqgHn-GxAqgHpuuxAqgH1ckbqAfZtrECqAeaBqgHmMWxAqgH_56xAqgH35-xAqgH-MKxAqgH-8KxAtgHAdIIMwiAYRABGJ8DMgiKgoCAgICACDoPgECAwICAgICogAKog4AYSL39wTpYspnbicK-lwNgAZoJIWh0dHBzOi8vb25lLmdvb2dsZS5jb20vYWktc3R1ZGVudLEJdY6XKLLEmwyACgHICwHgCwGiDFMqCgoI8N-xApnusQJiEAoOY29tLmdvb2dsZS5vbmVqKwopY29tLmdvb2dsZS5hbmRyb2lkLmFwcHMuc3Vic2NyaXB0aW9ucy5yZWR4AYgBAZABAaoNAklOyA0B6g0TCJzP24nCvpcDFUnGOAYd-HoIiIgOCbAOx628jhnYEwyIFAHQFQGYFgHKFgIKAPgWAYAXAbIXEBgBKgo2NjM4NjMzNTQ3UAa6FwI4AaoYFwkAAAAAAJsCQRIKNjYzODYzMzU0NxgBshgJEgKbXxgBIgEA0BgB6BgBwhkCCAE&gclid=EAIaIQobChMItsvbicK-lwMVScY4Bh34egiIEAEYASAAEgLxgvD_BwE&num=1&cid=CAQSnwIAQM4h3OXbEMnqimIiIScCeafS5-wYSh8npxnfQItLY7WhsvuxDaZcP6wz_FRmVx_cD6L8itheO7eN_v3koLCrIZxwrOly1w-cKgZrWVXpxWEezkBZGrBCG1tt6g2m3QpsfdxrWIDc9ORAkG-c3mMDNsGr2Sxski4U03-18QcTpNhxAWaz9gNiNMLGOyXQQLEwFtE4kOyXMpek1EIacvnbwbzrvBKPIGqrBAQ2Oo0e3UHnOrObp3z6MJGKoQdz3wjftVfwdaK2lm1ma4BcQCpLUiXRh_wYTjzTRGtrkpZqcMksnd0ro1LEyysqDp7MELLhZOMS_Rk2tHSQf5n_1qcqBkDjHzeuqfM7ijAuHCMJRpjnktR8m0nkhMdGsKxj6BgB&sig=AOD64_3Twv5SpZ5GAgnbrK_h-qK1F3haIA&rf=1&nb=0&adurl=https://ad.doubleclick.net/searchads/link/click%3Flid%3D58700009116009347%26ds_a_cid%3D272908699%26ds_a_caid%3D24145227570%26ds_a_agid%3D%26ds_a_fiid%3D%26ds_a_lid%3D%26ds_a_extid%3D%26%26ds_e_adid%3D%26ds_e_matchtype%3D%26ds_e_device%3Dc%26ds_e_network%3Dx%26%26ds_url_v%3D2%26ds_dest_url%3Dhttps://one.google.com/ai-student%3Fplans%3D1%252C2%26utm_source%3Dgemini%26utm_medium%3Dpaid_media%26utm_campaign%3Dslap_pmax_dr-pmax%26gclsrc%3Daw.ds%26gad_source%3D5%26gad_campaignid%3D24151646606
+                  - text: Claim yourGemini studentplan
+              - generic [ref=f3e11]:
+                - 'link "Google Gemini: Claim your student plan for 1 year at no cost." [ref=f3e13] [cursor=pointer]':
+                  - /url: https://www.googleadservices.com/pagead/aclk?sa=L&ai=CDNsaihXSarbeN8mM4-EP-PWhwAjf-ZaeigHcpvnL8hX8wbWrrgEQASCPvrcvYOWS6IPYDqAB9OmL_gLIAQGoAwHIA8sEqgTyAU_QtmeKJMk8oMaaZzMyVSlr5mPbVgjNpCii7SBRgWF1mdqZ6snKxfmaYQaehpzmgqMj79HBAW2EOUmLvk_uTVHZ6YALwZEv1p60QlMUVGOnqmoou1NIz2Dwsp2kkBJ0rGV3cV3J7j_mZ84XB1p8SdwHUADo_5JW70llYhbGW-v2ADgkTBWWrSvJjcP1jA8xV4_Trf2qWBHDeGEhQgFXuVBoN8CaLOtMngjbUTwjY5opIDk6jVQTidNGuD4D-zzRoOQI5ZVCvLjierR6uPJpLva3fvtL6lOIMmroJdJgMnRNrVqoKD6vjB3Wbzn6FhLo-lcDwATNxN3v5gWIBY7Ds_xZgAf0lfSBAagHp8yxAqgH4tixAqgHpr4bqAfMzrECqAfz0RuoB5bYG6gHqpuxAqgH_uixAqgHjs4bqAeT2BuoB_DgG6gH7paxAqgH_p6xAqgHr76xAqgHn-GxAqgHpuuxAqgH1ckbqAfZtrECqAeaBqgHmMWxAqgH_56xAqgH35-xAqgH-MKxAqgH-8KxAtgHAdIIMwiAYRABGJ8DMgiKgoCAgICACDoPgECAwICAgICogAKog4AYSL39wTpYspnbicK-lwNgAZoJIWh0dHBzOi8vb25lLmdvb2dsZS5jb20vYWktc3R1ZGVudLEJdY6XKLLEmwyACgHICwHgCwGiDFMqCgoI8N-xApnusQJiEAoOY29tLmdvb2dsZS5vbmVqKwopY29tLmdvb2dsZS5hbmRyb2lkLmFwcHMuc3Vic2NyaXB0aW9ucy5yZWR4AYgBAZABAaoNAklOyA0B6g0TCJzP24nCvpcDFUnGOAYd-HoIiIgOCbAOx628jhnYEwyIFAHQFQGYFgHKFgIKAPgWAYAXAbIXEBgBKgo2NjM4NjMzNTQ3UAa6FwI4AaoYFwkAAAAAAJsCQRIKNjYzODYzMzU0NxgBshgJEgKbXxgBIgEA0BgB6BgBwhkCCAE&gclid=EAIaIQobChMItsvbicK-lwMVScY4Bh34egiIEAEYASAAEgLxgvD_BwE&num=1&cid=CAQSnwIAQM4h3OXbEMnqimIiIScCeafS5-wYSh8npxnfQItLY7WhsvuxDaZcP6wz_FRmVx_cD6L8itheO7eN_v3koLCrIZxwrOly1w-cKgZrWVXpxWEezkBZGrBCG1tt6g2m3QpsfdxrWIDc9ORAkG-c3mMDNsGr2Sxski4U03-18QcTpNhxAWaz9gNiNMLGOyXQQLEwFtE4kOyXMpek1EIacvnbwbzrvBKPIGqrBAQ2Oo0e3UHnOrObp3z6MJGKoQdz3wjftVfwdaK2lm1ma4BcQCpLUiXRh_wYTjzTRGtrkpZqcMksnd0ro1LEyysqDp7MELLhZOMS_Rk2tHSQf5n_1qcqBkDjHzeuqfM7ijAuHCMJRpjnktR8m0nkhMdGsKxj6BgB&sig=AOD64_3Twv5SpZ5GAgnbrK_h-qK1F3haIA&rf=1&nb=7&adurl=https://ad.doubleclick.net/searchads/link/click%3Flid%3D58700009116009347%26ds_a_cid%3D272908699%26ds_a_caid%3D24145227570%26ds_a_agid%3D%26ds_a_fiid%3D%26ds_a_lid%3D%26ds_a_extid%3D%26%26ds_e_adid%3D%26ds_e_matchtype%3D%26ds_e_device%3Dc%26ds_e_network%3Dx%26%26ds_url_v%3D2%26ds_dest_url%3Dhttps://one.google.com/ai-student%3Fplans%3D1%252C2%26utm_source%3Dgemini%26utm_medium%3Dpaid_media%26utm_campaign%3Dslap_pmax_dr-pmax%26gclsrc%3Daw.ds%26gad_source%3D5%26gad_campaignid%3D24151646606
+                  - text: "Google Gemini: Claim yourstudent plan for 1 year atno cost."
+                - link [ref=f3e14] [cursor=pointer]:
+                  - /url: https://www.googleadservices.com/pagead/aclk?sa=L&ai=CDNsaihXSarbeN8mM4-EP-PWhwAjf-ZaeigHcpvnL8hX8wbWrrgEQASCPvrcvYOWS6IPYDqAB9OmL_gLIAQGoAwHIA8sEqgTyAU_QtmeKJMk8oMaaZzMyVSlr5mPbVgjNpCii7SBRgWF1mdqZ6snKxfmaYQaehpzmgqMj79HBAW2EOUmLvk_uTVHZ6YALwZEv1p60QlMUVGOnqmoou1NIz2Dwsp2kkBJ0rGV3cV3J7j_mZ84XB1p8SdwHUADo_5JW70llYhbGW-v2ADgkTBWWrSvJjcP1jA8xV4_Trf2qWBHDeGEhQgFXuVBoN8CaLOtMngjbUTwjY5opIDk6jVQTidNGuD4D-zzRoOQI5ZVCvLjierR6uPJpLva3fvtL6lOIMmroJdJgMnRNrVqoKD6vjB3Wbzn6FhLo-lcDwATNxN3v5gWIBY7Ds_xZgAf0lfSBAagHp8yxAqgH4tixAqgHpr4bqAfMzrECqAfz0RuoB5bYG6gHqpuxAqgH_uixAqgHjs4bqAeT2BuoB_DgG6gH7paxAqgH_p6xAqgHr76xAqgHn-GxAqgHpuuxAqgH1ckbqAfZtrECqAeaBqgHmMWxAqgH_56xAqgH35-xAqgH-MKxAqgH-8KxAtgHAdIIMwiAYRABGJ8DMgiKgoCAgICACDoPgECAwICAgICogAKog4AYSL39wTpYspnbicK-lwNgAZoJIWh0dHBzOi8vb25lLmdvb2dsZS5jb20vYWktc3R1ZGVudLEJdY6XKLLEmwyACgHICwHgCwGiDFMqCgoI8N-xApnusQJiEAoOY29tLmdvb2dsZS5vbmVqKwopY29tLmdvb2dsZS5hbmRyb2lkLmFwcHMuc3Vic2NyaXB0aW9ucy5yZWR4AYgBAZABAaoNAklOyA0B6g0TCJzP24nCvpcDFUnGOAYd-HoIiIgOCbAOx628jhnYEwyIFAHQFQGYFgHKFgIKAPgWAYAXAbIXEBgBKgo2NjM4NjMzNTQ3UAa6FwI4AaoYFwkAAAAAAJsCQRIKNjYzODYzMzU0NxgBshgJEgKbXxgBIgEA0BgB6BgBwhkCCAE&gclid=EAIaIQobChMItsvbicK-lwMVScY4Bh34egiIEAEYASAAEgLxgvD_BwE&num=1&cid=CAQSnwIAQM4h3OXbEMnqimIiIScCeafS5-wYSh8npxnfQItLY7WhsvuxDaZcP6wz_FRmVx_cD6L8itheO7eN_v3koLCrIZxwrOly1w-cKgZrWVXpxWEezkBZGrBCG1tt6g2m3QpsfdxrWIDc9ORAkG-c3mMDNsGr2Sxski4U03-18QcTpNhxAWaz9gNiNMLGOyXQQLEwFtE4kOyXMpek1EIacvnbwbzrvBKPIGqrBAQ2Oo0e3UHnOrObp3z6MJGKoQdz3wjftVfwdaK2lm1ma4BcQCpLUiXRh_wYTjzTRGtrkpZqcMksnd0ro1LEyysqDp7MELLhZOMS_Rk2tHSQf5n_1qcqBkDjHzeuqfM7ijAuHCMJRpjnktR8m0nkhMdGsKxj6BgB&sig=AOD64_3Twv5SpZ5GAgnbrK_h-qK1F3haIA&rf=1&nb=8&adurl=https://ad.doubleclick.net/searchads/link/click%3Flid%3D58700009116009347%26ds_a_cid%3D272908699%26ds_a_caid%3D24145227570%26ds_a_agid%3D%26ds_a_fiid%3D%26ds_a_lid%3D%26ds_a_extid%3D%26%26ds_e_adid%3D%26ds_e_matchtype%3D%26ds_e_device%3Dc%26ds_e_network%3Dx%26%26ds_url_v%3D2%26ds_dest_url%3Dhttps://one.google.com/ai-student%3Fplans%3D1%252C2%26utm_source%3Dgemini%26utm_medium%3Dpaid_media%26utm_campaign%3Dslap_pmax_dr-pmax%26gclsrc%3Daw.ds%26gad_source%3D5%26gad_campaignid%3D24151646606
+            - generic "Google Gemini" [ref=f3e17]:
+              - link "Google Gemini" [ref=f3e18] [cursor=pointer]:
+                - /url: https://www.googleadservices.com/pagead/aclk?sa=L&ai=CDNsaihXSarbeN8mM4-EP-PWhwAjf-ZaeigHcpvnL8hX8wbWrrgEQASCPvrcvYOWS6IPYDqAB9OmL_gLIAQGoAwHIA8sEqgTyAU_QtmeKJMk8oMaaZzMyVSlr5mPbVgjNpCii7SBRgWF1mdqZ6snKxfmaYQaehpzmgqMj79HBAW2EOUmLvk_uTVHZ6YALwZEv1p60QlMUVGOnqmoou1NIz2Dwsp2kkBJ0rGV3cV3J7j_mZ84XB1p8SdwHUADo_5JW70llYhbGW-v2ADgkTBWWrSvJjcP1jA8xV4_Trf2qWBHDeGEhQgFXuVBoN8CaLOtMngjbUTwjY5opIDk6jVQTidNGuD4D-zzRoOQI5ZVCvLjierR6uPJpLva3fvtL6lOIMmroJdJgMnRNrVqoKD6vjB3Wbzn6FhLo-lcDwATNxN3v5gWIBY7Ds_xZgAf0lfSBAagHp8yxAqgH4tixAqgHpr4bqAfMzrECqAfz0RuoB5bYG6gHqpuxAqgH_uixAqgHjs4bqAeT2BuoB_DgG6gH7paxAqgH_p6xAqgHr76xAqgHn-GxAqgHpuuxAqgH1ckbqAfZtrECqAeaBqgHmMWxAqgH_56xAqgH35-xAqgH-MKxAqgH-8KxAtgHAdIIMwiAYRABGJ8DMgiKgoCAgICACDoPgECAwICAgICogAKog4AYSL39wTpYspnbicK-lwNgAZoJIWh0dHBzOi8vb25lLmdvb2dsZS5jb20vYWktc3R1ZGVudLEJdY6XKLLEmwyACgHICwHgCwGiDFMqCgoI8N-xApnusQJiEAoOY29tLmdvb2dsZS5vbmVqKwopY29tLmdvb2dsZS5hbmRyb2lkLmFwcHMuc3Vic2NyaXB0aW9ucy5yZWR4AYgBAZABAaoNAklOyA0B6g0TCJzP24nCvpcDFUnGOAYd-HoIiIgOCbAOx628jhnYEwyIFAHQFQGYFgHKFgIKAPgWAYAXAbIXEBgBKgo2NjM4NjMzNTQ3UAa6FwI4AaoYFwkAAAAAAJsCQRIKNjYzODYzMzU0NxgBshgJEgKbXxgBIgEA0BgB6BgBwhkCCAE&gclid=EAIaIQobChMItsvbicK-lwMVScY4Bh34egiIEAEYASAAEgLxgvD_BwE&num=1&cid=CAQSnwIAQM4h3OXbEMnqimIiIScCeafS5-wYSh8npxnfQItLY7WhsvuxDaZcP6wz_FRmVx_cD6L8itheO7eN_v3koLCrIZxwrOly1w-cKgZrWVXpxWEezkBZGrBCG1tt6g2m3QpsfdxrWIDc9ORAkG-c3mMDNsGr2Sxski4U03-18QcTpNhxAWaz9gNiNMLGOyXQQLEwFtE4kOyXMpek1EIacvnbwbzrvBKPIGqrBAQ2Oo0e3UHnOrObp3z6MJGKoQdz3wjftVfwdaK2lm1ma4BcQCpLUiXRh_wYTjzTRGtrkpZqcMksnd0ro1LEyysqDp7MELLhZOMS_Rk2tHSQf5n_1qcqBkDjHzeuqfM7ijAuHCMJRpjnktR8m0nkhMdGsKxj6BgB&sig=AOD64_3Twv5SpZ5GAgnbrK_h-qK1F3haIA&rf=1&nb=1&adurl=https://ad.doubleclick.net/searchads/link/click%3Flid%3D58700009116009347%26ds_a_cid%3D272908699%26ds_a_caid%3D24145227570%26ds_a_agid%3D%26ds_a_fiid%3D%26ds_a_lid%3D%26ds_a_extid%3D%26%26ds_e_adid%3D%26ds_e_matchtype%3D%26ds_e_device%3Dc%26ds_e_network%3Dx%26%26ds_url_v%3D2%26ds_dest_url%3Dhttps://one.google.com/ai-student%3Fplans%3D1%252C2%26utm_source%3Dgemini%26utm_medium%3Dpaid_media%26utm_campaign%3Dslap_pmax_dr-pmax%26gclsrc%3Daw.ds%26gad_source%3D5%26gad_campaignid%3D24151646606
+          - generic [ref=f3e19] [cursor=pointer]
+          - button [ref=f3e24] [cursor=pointer]
+          - iframe
+    - insertion [ref=e112]:
+      - generic [ref=e115]:
+        - heading [level=2] [ref=e117]: Discover more
+        - link [ref=e118] [cursor=pointer]:
+          - generic [ref=e119]: Widgets testing course
+        - link [ref=e123] [cursor=pointer]:
+          - generic [ref=e124]: Drag and Drop testing
+        - link [ref=e128] [cursor=pointer]:
+          - generic [ref=e129]: Video testing platform
+        - link [ref=e133] [cursor=pointer]:
+          - generic [ref=e134]: Source Robotics
+        - link [ref=e138] [cursor=pointer]:
+          - generic [ref=e139]: WYSIWYG editor testing
+        - link [ref=e143] [cursor=pointer]:
+          - generic [ref=e144]: File upload testing
+        - link [ref=e148] [cursor=pointer]:
+          - generic [ref=e149]: Progress bar testing
+        - link [ref=e153] [cursor=pointer]:
+          - generic [ref=e154]: Modals testing examples
+    - insertion [ref=e160]:
+      - generic [ref=e163]:
+        - heading [level=2] [ref=e165]: Discover more
+        - link [ref=e166] [cursor=pointer]:
+          - generic [ref=e167]: Try Dev Tools
+        - link [ref=e171] [cursor=pointer]:
+          - generic [ref=e172]: Try Cloud Tools
+        - link [ref=e176] [cursor=pointer]:
+          - generic [ref=e177]: Learn to Code
+        - link [ref=e181] [cursor=pointer]:
+          - generic [ref=e182]: JQuery testing resources
+        - link [ref=e186] [cursor=pointer]:
+          - generic [ref=e187]: Try CMS Tools
+        - link [ref=e191] [cursor=pointer]:
+          - generic [ref=e192]: Dynamic data testing
+        - link [ref=e196] [cursor=pointer]:
+          - generic [ref=e197]: Binge Hit Series
+        - link [ref=e201] [cursor=pointer]:
+          - generic [ref=e202]: Compare TVs
+    - contentinfo [ref=e207]:
+      - generic [ref=e209]:
+        - generic [ref=e210]:
+          - text: "\"@ 2016\""
+          - link [ref=e211] [cursor=pointer]:
+            - /url: "#"
+            - text: Automation Testing
+          - text: "\"All Rights Reserved.\""
+        - generic [ref=e212]:
+          - link [ref=e213] [cursor=pointer]:
+            - /url: https://www.facebook.com/automationtesting2016/
+            - generic [ref=e214]: 
+          - link [ref=e215] [cursor=pointer]:
+            - /url: https://twitter.com/krishnasakinala
+            - generic [ref=e216]: 
+          - link [ref=e217] [cursor=pointer]:
+            - /url: https://www.linkedin.com/nhome/?trk=hb_signin
+            - generic [ref=e218]: 
+          - link [ref=e219] [cursor=pointer]:
+            - /url: https://plus.google.com/105286300926085335367
+            - generic [ref=e220]: 
+          - link [ref=e221] [cursor=pointer]:
+            - /url: https://www.youtube.com/channel/UCmQRa3pWM9zsB474URz8ESg
+            - generic [ref=e222]: 
+```

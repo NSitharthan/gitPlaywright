@@ -1,0 +1,1 @@
+The Simple Alert Message is :  I am an alert box!

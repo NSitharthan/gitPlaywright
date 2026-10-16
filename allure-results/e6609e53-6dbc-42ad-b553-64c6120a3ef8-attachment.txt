@@ -1,0 +1,1 @@
+The Selected Value in the Fruits Dropdown is: Banana
